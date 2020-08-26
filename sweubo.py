@@ -426,13 +426,13 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
-           r".*[cC]ookie.*", 
+           r".*[cC]ooo?k[ic][es]?.*", 
            r"", 
            line
         )
 
         line = re.sub(
-           r".*[aA]d[bB]lock.*", 
+           r".*[aA]d-?[bB]lock.*", 
            r"", 
            line
         )
@@ -467,6 +467,96 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*[sS]hare.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[sS]ocial.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[pP]aywall.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*follow-us.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*stickyFollow.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[nN]otifi.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*facebook.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*push.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*-icon\.\$.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[cC]onsent.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*optin.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[/.|]like.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*nyhetsbrev.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[aA]dd[tT]his.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*privacy.*", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -486,4 +576,232 @@ if __name__ == "__main__":
     with open(OUTPUT_ABP, "w") as text_file:
         text_file.write(abp_filter)
 
-    print('The Eyeo list version has been generated.')
+    print('The uBO-file-to-ABP conversion has been generated.')
+
+#/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\/•\
+#•X••X••X••X••X••X••X••X••X••X••X••X••X••X••X••X••X••X••X••X••X••X••X••X••X•
+#\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/\•/
+
+import requests
+import re
+
+SOURCES = ['https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Filter.txt']
+
+UNSUPPORTED_ABP = ['$important', ',important', '$redirect=', ',redirect=',
+    ':style', '##+js', '.*#' , '!#if', '!#endif', '!+ ', '##^', '!#i', '$app', ':not(:-abp-', '$csp=upgrade-insecure-requests', '$badfilter']
+
+OUTPUT = 'xyzzyxregular.txt'
+OUTPUT_ABP = 'SwedishList-Regular.txt'
+
+# function that downloads the filter list
+def download_filters() -> str:
+    text = ''
+    for url in SOURCES:
+        r = requests.get(url)
+        text += r.text
+    return text
+
+# ——— Adblock Plus version ———
+
+def is_supported_abp(line) -> bool:
+    for token in UNSUPPORTED_ABP:
+        if token in line:
+            return False
+
+    return True
+
+# function that prepares the filter list for ABP
+def prepare_abp(lines) -> str:
+    text = ''
+
+    # remove or modifiy entries with unsupported modifiers
+    for line in lines:
+
+        line = re.sub(
+           r"(#\$#.*),", 
+           r"\1", 
+           line
+        )
+
+        line = re.sub(
+           r":before", 
+           r"::before", 
+           line
+        )
+
+        line = re.sub(
+           r":after", 
+           r"::after", 
+           line
+        )
+
+        line = re.sub(
+           r"([$,])frame(,|$)", 
+           r"\1subdocument\2", 
+           line
+        )
+
+        line = re.sub(
+           r"^!$", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[cC]ooo?k[ic][es]?.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[aA]d-?[bB]lock.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[nN]ews-?letter.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*gdpr.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*#\$#.*advanced_ads.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"=\"([a-zA-Z_-]{1,40})\"", 
+           r"=\1", 
+           line
+        )
+
+        line = re.sub(
+           r"^! .*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"^\[Adblock .*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[sS]hare.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[sS]ocial.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[pP]aywall.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*follow-us.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*stickyFollow.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[nN]otifi.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*facebook.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*push.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*-icon\.\$.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[cC]onsent.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*optin.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[/.|]like.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*nyhetsbrev.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[aA]dd[tT]his.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*privacy.*", 
+           r"", 
+           line
+        )
+
+        if is_supported_abp(line) and not line == '':
+            text += line + '\r\n'
+
+    return text
+
+if __name__ == "__main__":
+    print('Starting the script')
+    text = download_filters()
+    lines = text.splitlines(False)
+    print('Total number of rules: ' + str(len(lines)))
+
+    abp_filter = prepare_abp(lines)
+
+    with open(OUTPUT, "w") as text_file:
+        text_file.write(text)
+
+    with open(OUTPUT_ABP, "w") as text_file:
+        text_file.write(abp_filter)
+
+    print('The regular-file-to-ABP conversion has been generated.')
