@@ -1,7 +1,7 @@
 [Adblock Plus 3.6]
 ! Title: 🇸🇪 Swedish List for Adblock Plus
 ! Expires: 6 days (update frequency)
-! Version: 100920201
+! Version: 10092020̈2
 ! Homepage: https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus
 ! 🇸🇪 Beskrivning: Den här listan fjärnar reklamar och sporing på svenskspråkiga websidor. Den er mycket närt tilknyttad «Frellwit's Swedish Filters», men har blivit modifiserad för at fjärna uppföringer som stridar imot reglementet för inkludering i Adblock Plus (så som anti-anti-adblocking, cookie-notifikationer, nyhetsbrev, med mer), och öka kompatibiliteten med ABP sin syntax, eftersom Frellwits lista inte tilbjuder offisiell brukerstöd för ABP-brukare. Planen är at synkronisera med listan honoms omkring en gång i månaden, och at vi i ABP-teamet lägger til båda variga och mildertidiga fixer i mällantiden.
 ! 🇬🇧 Description: This list removes advertising and tracking on Swedish-language websites. It is very closely connected to "Frellwit's Swedish Filters", but has been modified to remove entries that are against the rules for inclusion in Adblock Plus (such as anti-anti-adblocking, cookie notifications, newsletters, etc.), and increase compatibility with ABP's syntax, since Frellwit's list does not offer official user support for ABP users. The plan is to synchronise with his list roughly once a month, and that the ABP team add both permanent and temporary fixes in the meantime.
@@ -650,7 +650,6 @@
 @@||cdn.bluebillywig.com^*/components/admanager.js$script,domain=modette.se|nyheter24.se
 @@||cdn.dynamicyield.com^$domain=alingsastidning.se|bohuslaningen.se|gp.se|hallandsposten.se|hn.se|stromstadstidning.se|ttela.se
 @@||cdn.yieldwrapper.com/yieldwrapper.min.js$script,domain=spray.se
-@@||consensu.org^*/config.js$script
 @@||cykla.se/wp-admin/admin-ajax.php?action*&advert_search$xmlhttprequest
 @@||cykla.se/wp-content/themes/cykla/assets/images/advert-filter-top.jpg$image
 @@||d11j2g8hmtmh4u.cloudfront.net/orion/jquery.$script
@@ -692,7 +691,6 @@
 @@||tidningenhalsa.se^$generichide
 @@||ttela.se^$generichide
 @@||typkanske.se^$generichide
-@@||vendorlist.consensu.org/vendorlist.json
 @@||www.aftonbladet.se^$generichide
 _jquery.blockUI.$script,domain=fssweden.se
 affarsliv.com,affarslivgotland.se,allsvenskan.se,alltomstockholm.se,babyhjalp.se,branschkoll.se,corren.se,ekuriren.se,eposten.se,folkbladet.se,fotosidan.se,globalportalen.org,helagotland.se,kkuriren.se,klackspark.com,kollega.se,kuriren.nu,mitti.se,moviezine.se,mvt.se,norrbottensaffarer.se,nsd.se,nt.se,osterbottenstidning.fi,pt.se,sn.se,unt.se,vimmerbytidning.se,vt.se##.ads
@@ -1757,7 +1755,6 @@ viivilla.se##.afubar-top
 viivilla.se##.native-ad-md
 viivilla.se##.overlay-bottom
 viivilla.se##.sp-article
-viktvaktarna.se##div[class*=GDPRBanner]
 vilkenstorlek.se##.rcc-panel
 villalivet.se##.onp-sl-overlap-box
 vimedbarn.se##.annonsinlagg
@@ -1913,7 +1910,6 @@ yelp.se##[data-ga-category="biz page ad"]
 ||connect.nosto.com^*/behav-popup.$script
 ||connectad.io^$third-party
 ||connectio.s3.amazonaws.com/connect-retarget.$script
-||consensu.org^$third-party,domain=~crfashionbook.com|~independent.co.uk|~joe.ie|~mirror.co.uk|~sourceforge.net|~sportsjoe.ie|~vi.nl
 ||converdiant.com^$third-party
 ||convertkit.com^$third-party
 ||conviva.com^$third-party
