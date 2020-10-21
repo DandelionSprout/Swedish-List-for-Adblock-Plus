@@ -7,7 +7,7 @@ UNSUPPORTED_ABP = ['$important', ',important', '$redirect=', ',redirect=',
     ':style', '##+js', '.*#' , '!#if', '!#endif', '!+ ', '##^', '!#i', '$app', ':not(:-abp-', '$csp=upgrade-insecure-requests', '$badfilter']
 
 OUTPUT = 'xyzzyx.txt'
-OUTPUT_ABP = 'SwedishList-uBONano.txt'
+OUTPUT_ABP = 'SwedishList-uBO.txt'
 
 # function that downloads the filter list
 def download_filters() -> str:
