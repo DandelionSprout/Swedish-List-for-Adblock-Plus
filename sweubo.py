@@ -1,7 +1,7 @@
 import requests
 import re
 
-SOURCES = ['https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/swe-ubo-nano-filters.txt']
+SOURCES = ['https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/swe-ubo-filters.txt']
 
 UNSUPPORTED_ABP = ['$important', ',important', '$redirect=', ',redirect=',
     ':style', '##+js', '.*#' , '!#if', '!#endif', '!+ ', '##^', '!#i', '$app', ':not(:-abp-', '$csp=upgrade-insecure-requests', '$badfilter']
@@ -450,6 +450,12 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
+           r".*GDPR.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
            r".*#\$#.*advanced_ads.*", 
            r"", 
            line
@@ -553,6 +559,36 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*privacy.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*(\* > [a-z0-9äöå ]{1,})/i.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*consensu.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"^[a-z0-9_]{1,6}$", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[$,]queryprune.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*:upward\([a-z.].*", 
            r"", 
            line
         )
@@ -672,6 +708,12 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
+           r".*GDPR.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
            r".*#\$#.*advanced_ads.*", 
            r"", 
            line
@@ -781,6 +823,30 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*privacy.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*EUModal.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*OneSignal.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*smartbanner.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*consensu.*", 
            r"", 
            line
         )
