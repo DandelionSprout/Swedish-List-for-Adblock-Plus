@@ -1,7 +1,7 @@
 [Adblock Plus 3.6]
 ! Title: 🇸🇪 Swedish List for Adblock Plus
 ! Expires: 6 days (update frequency)
-! Version: 241120201
+! Version: 241120202
 ! Homepage: https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus
 ! 🇸🇪 Beskrivning: Den här listan fjärnar reklamar och sporing på svenskspråkiga websidor. Den er mycket närt tilknyttad «Frellwit's Swedish Filters», men har blivit modifiserad för at fjärna uppföringer som stridar imot reglementet för inkludering i Adblock Plus (så som anti-anti-adblocking, cookie-notifikationer, nyhetsbrev, med mer), och öka kompatibiliteten med ABP sin syntax, eftersom Frellwits lista inte tilbjuder offisiell brukerstöd för ABP-brukare. Planen är at synkronisera med listan honoms omkring en gång i månaden, och at vi i ABP-teamet lägger til båda variga och mildertidiga fixer i mällantiden.
 ! 🇬🇧 Description: This list removes advertising and tracking on Swedish-language websites. It is very closely connected to "Frellwit's Swedish Filters", but has been modified to remove entries that are against the rules for inclusion in Adblock Plus (such as anti-anti-adblocking, cookie notifications, newsletters, etc.), and increase compatibility with ABP's syntax, since Frellwit's list does not offer official user support for ABP users. The plan is to synchronise with his list roughly once a month, and that the ABP team add both permanent and temporary fixes in the meantime.
@@ -2399,7 +2399,6 @@ aftonbladet.se#?#*:-abp-has(> a[href*="aftonbladet.se/kampanj/artikel"])
 aftonbladet.se#?#a[href^="/tv/"]:-abp-has(span:-abp-contains(/studio *:-abp-has(> oddset/i)))
 aftonbladet.se#?#article:-abp-has(a[data-sponsored=true])
 aftonbladet.se#?#div[class][style^=text]:-abp-has(h3:-abp-contains(/annons/i))
-aftonbladet.se##source[srcset*="/ANNONS"]:upward(a)
 akaskidor.se,svenskgolf.se#?#.margin-bottom:-abp-has(.row--native)
 aktivtraning.se,iform.se,natgeo.se#?#li:-abp-has(.content-label:-abp-contains(/annons/i))()
 aktuellhallbarhet.se,dagensmedia.se,dagensmedicin.se,fastighetsnytt.se,resume.se#?#*:-abp-has(> .slot-panorama)
@@ -2506,7 +2505,6 @@ fuska.se#?#.well_green:-abp-contains(låna)
 futsalmagasinet.se#?#.td_block_wrap:-abp-has(span:-abp-contains(/annonserat innehåll/i))
 fz.se#$#abort-current-inline-script Taiga Blackboard
 fz.se#?#.card:-abp-has(.article-sponsored)
-fz.se#?#.fp-carousel .fpci-kicker:-abp-contains(/^sponsr/i):upward(.fpc-item)
 gamereactor.se#$#abort-current-inline-script AdsReloadConfig
 gamereactor.se#$#abort-on-property-write banner_video
 gamereactor.se#?#.artistyle3:-abp-has(h4:-abp-contains(/sponsored/i))
@@ -2607,7 +2605,6 @@ nyheter24.se#?#[id^=article]:-abp-has(.native_header)
 nyheter24.se#?#[id^=article]:-abp-has(em:-abp-contains(/artikeln är i samarbete med/i))
 nyheter24.se#?#article:-abp-has(a[href="/casino"])
 nyheteridag.se#$#abort-current-inline-script sc type
-omni.se,omniekonomi.se##a[href*=article-ad-]:upward(.resource--link)
 opulens.se#$#abort-current-inline-script jQuery themifyPopup
 piraja.se#?##featholder:-abp-has(.spons)
 piraja.se#?##hero:-abp-has(.spons)
@@ -2649,7 +2646,6 @@ tennisportalen.se#?#.tdc-row.stretch_row_content:-abp-has(a[href$="/category/spo
 tennisportalen.se#?#[class^=td-block-span]:-abp-has(a[href$="/sponsrad/"])
 themoviefreak.se#$#abort-current-inline-script animate
 tidningen.nu#?#*:-abp-has(> span:-abp-contains(/^Annons$/)) + .textwidget
-tidningenglobal.se#?#span:-abp-contains(/annons/i):upward(.elementor-widget-wrap)
 tjanstebilen.se#?#.post-item:-abp-has(.sponsored-article)
 totallyorebro.se,totallystockholm.se#?#[class*=tot-content-preview-container]:-abp-has(a[href*=casino])()
 tradera.com#?#*:-abp-has(> [id^=adsense-shopping])
@@ -2676,7 +2672,6 @@ vinochbar.se#?#.et_pb_column.et-last-child:-abp-has(span:-abp-contains(/^annons/
 vinochbar.se#?#[class*=et_pb_row_inner]:-abp-has(span:-abp-contains(/^annons/i))
 voister.se#?#.voister .brief:-abp-has(.voister .campaign-vignette)
 voodoofilm.org#?#.content-news:-abp-has(span[id*=Sponsored])
-worldkustom.com##a[target=_blank]:upward(.textwidget)
 www.aftonbladet.se#$#abort-current-inline-script preLoadAds loadAd
 www.aftonbladet.se#$#abort-current-inline-script preLoadAds setup
 www.dn.se#$#abort-current-inline-script DN initAds
