@@ -96,6 +96,18 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
+           ":matches-css-after\(", 
+           ":-abp-properties(", 
+           line
+        )
+
+        line = re.sub(
+           r"\.\*\^", 
+           r".", 
+           line
+        )
+
+        line = re.sub(
            "^,", 
            "^$", 
            line
