@@ -605,6 +605,30 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*OneSignal.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*nwletter.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"\(\)$", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"\$media,mp4", 
+           r"$media,rewrite=abp-resource:blank-mp3", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -859,6 +883,12 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*consensu.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*nwletter.*", 
            r"", 
            line
         )
