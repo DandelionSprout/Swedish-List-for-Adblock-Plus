@@ -1,7 +1,7 @@
 [Adblock Plus 3.6]
 ! Title: 🇸🇪 Swedish List for Adblock Plus
 ! Expires: 6 days (update frequency)
-! Version: 080120211
+! Version: 090120211
 ! Homepage: https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus
 ! 🇸🇪 Beskrivning: Den här listan fjärnar reklamar och sporing på svenskspråkiga websidor. Den er mycket närt tilknyttad «Frellwit's Swedish Filters», men har blivit modifiserad för at fjärna uppföringer som stridar imot reglementet för inkludering i Adblock Plus (så som anti-anti-adblocking, cookie-notifikationer, nyhetsbrev, med mer), och öka kompatibiliteten med ABP sin syntax, eftersom Frellwits lista inte tilbjuder offisiell brukerstöd för ABP-brukare. Planen är at synkronisera med listan honoms omkring en gång i månaden, och at vi i ABP-teamet lägger til båda variga och mildertidiga fixer i mällantiden.
 ! 🇬🇧 Description: This list removes advertising and tracking on Swedish-language websites. It is very closely connected to "Frellwit's Swedish Filters", but has been modified to remove entries that are against the rules for inclusion in Adblock Plus (such as anti-anti-adblocking, cookie notifications, newsletters, etc.), and increase compatibility with ABP's syntax, since Frellwit's list does not offer official user support for ABP users. The plan is to synchronise with his list roughly once a month, and that the ABP team add both permanent and temporary fixes in the meantime.
@@ -2133,7 +2133,7 @@ yelp.se##[data-ga-category="biz page ad"]
 ||zummycloud.com^$third-party
 
 ! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/swe-ubo-filters.txt /\/\/\/\/\/\/\/\/\/\
-! Last synced with upstream: 8th of January 2021
+! Last synced with upstream: 9th of January 2021
 .info/dagens-nyheter/
 .info/dn-nyheter/
 .info/expressen-se-nyheter/
@@ -2162,7 +2162,6 @@ yelp.se##[data-ga-category="biz page ad"]
 /wp-content/plugins/ad-inserter/includes$domain=asterixia.se|byggipedia.se|fysikstugan.se
 /wp-content/plugins/popup-builder-$script,domain=mmabetz.se
 99mac.se#?#.nitem:-abp-has(a[href="/arkiv/kategori/annons"])
-adlanda.se,babyhjalp.se,omnihalsa.com#$#abort-current-inline-script document.oncontextmenu
 affarsvarlden.se#?#article:-abp-has(span:-abp-contains(/annons/i))
 aftonbladet.se#?#.jwplayer:-abp-has(.svp-sponsor-label)
 aftonbladet.se#?#*:-abp-has(> a[href*="/kampanj/artikel"])
@@ -2175,8 +2174,6 @@ alltforforaldrar.se,mammasidan.se,minbebis.com#?#.unslider-wrap.unslider-carouse
 alltomburgare.se#?#.newscolumn:-abp-has(a[href$="/sponsrat/"])
 alltommat.se#?#.teaser:-abp-has(.teaser-label:-abp-contains(/annonssamarbete/i))
 alltommat.se,alltomtradgard.se,damernasvarld.se,expressen.se,skonahem.com,teknikensvarld.se#?#.teaser:-abp-has(.teaser__bottom--ad-marker)
-alpresor.se#$#abort-current-inline-script snowMax
-arvikanyheter.se,dalslanningen.se,filipstadstidning.se,fryksdalsbygden.se,hjotidning.se,karlskogatidning.se,kt.se,mariestadstidningen.se,nkp.se,nlt.se,nwt.se,provinstidningen.se,saffletidningen.se,sla.se,varmlandsaffarer.se,vf.se#$#abort-current-inline-script nwtThirdParties
 autonytt.se#?#.article_widget_preview:-abp-has(h2 > a:-abp-contains(/artikel i samarbete/i))
 autonytt.se#?#a:-abp-has(.label:-abp-contains(/sponsrad/i))
 avanza.se#?#.section:-abp-has(a:-abp-contains(/^annons/i))
@@ -2188,42 +2185,21 @@ battrenyheter.se#?#.post-item:-abp-has(a[href$="/sponsrad/"])
 battrenyheter.se#?#.post-item:-abp-has(a[href*=casino])
 battrenyheter.se#?#.vc_row.vc_row-flex:-abp-has(.abnan-single)
 battrestadsdel.se#?##my-mega-menu-widget:-abp-contains(/sponsrade artiklar/i)
-betting.se#$#abort-on-property-write Fingerprint2
 bilresaieuropa.se#?#.widget_text:-abp-has(.widget-title:-abp-contains(/spons/i))
 bonjourvintage.se#?#article:-abp-has(a[title*="Sponsrat inlägg"])
 borskollen.se#?#a[href^="/nyheter"]:-abp-has(span:-abp-contains(/annons/i))
-borsvarlden.com#$#abort-current-inline-script setREVStartSize
 borsvarlden.com#?#.format-thumb-small:-abp-has(.overlay-label:-abp-contains(/spons/i))
 borsvarlden.com#?#article:-abp-has(.border-sponsored)
-breakit.se#$#abort-current-inline-script brktloadfs
-breakit.se#$#abort-current-inline-script twttr trackPid
-buzzter.se#$#abort-current-inline-script Optins inc_opt
-byggipedia.se#$#abort-current-inline-script ai_insert
-byggipedia.se#$#abort-current-inline-script ai_insert_2
-byggipedia.se#$#abort-current-inline-script document.onkeypress
-byggipedia.se#$#abort-current-inline-script jQuery contextmenu
-byggipedia.se#$#abort-current-inline-script jQuery wizard_accordion
-byggvarlden.se,hotellorestaurang.se#$#abort-current-inline-script m3_r Math.floor
 cornucopia.cornubot.se#?#.FeaturedPost:-abp-has(a:-abp-contains(/^Reklam/i))
 cornucopia.cornubot.se#?#.FeaturedPost:-abp-contains(/publicerat i samarbete med/i)
 cornucopia.cornubot.se#?#.post:-abp-has(i:-abp-contains(/reklam/i))
 cyclingplus.se#?#article:-abp-has(.single-subtitle:-abp-contains(/annonssamarbete/i))
 cyclingplus.se,halsafitness.se,yogaworld.se#?#.post-wrap:-abp-has(h3:-abp-contains(/samarbete/i))
-dagensjuridik.se#$#abort-current-inline-script ox_u
 dagensjuridik.se#?#.card--muted:-abp-has(strong:-abp-contains(/^senaste nytt från våra partners/i))
-dagensknep.se,djursidan.se,mysigast.se#$#abort-current-inline-script mashvipo
-dagensps.se,nyheteridag.se#$#abort-current-inline-script googletag
 datormagazin.se#?#.td-big-grid-post:-abp-has(a[href*="/annons/"])
 datormagazin.se#?#div[class^=td-block-span]:-abp-has(a[href*="/annons/"])
-datormagazin.se,enkelteknik.se,ettgottskratt.se,handbollskanalen.se,humorbibeln.se,kimura.se,newsner.com,samnytt.se,sportbibeln.se,styrkelabbet.se,villalivet.se#$#abort-current-inline-script advads_placement_tests
-datormagazin.se,skanesport.se,villalivet.se#$#abort-on-property-read advads
-di.se#$#abort-current-inline-script Di initAds
-digital.di.se#$#abort-current-inline-script diConf
 dinlivsstil.nu,foretagsverige.se,forskningsverige.se,grillbibeln.se,hallbarhetsverige.se,kampenmotcancer.se,motorbibeln.se,tillvaxtsverige.se#?#.vicky-post-whitebox:-abp-has(.vicky-whitebox-label-text:-abp-contains(/spons/i))
 djungeltrumman.se#?#.item:-abp-has(.label-post:-abp-contains(/spons/i))
-emmagreen.se,fokis.se,fredagskocken.se,frureinhold.se,gynning.net,hormonerhemorrojder.se,magnusnorman.com,sannafischer.se,sannalundell.se,teresagrundin.se#$#abort-current-inline-script ga
-emmagreen.se,fokis.se,fredagskocken.se,frureinhold.se,gynning.net,hormonerhemorrojder.se,magnusnorman.com,sannafischer.se,sannalundell.se,teresagrundin.se#$#abort-current-inline-script jQuery .dfp
-enkelteknik.se,fysikstugan.se,hamnen.se#$#abort-current-inline-script ai_front
 ettgottskratt.se,humorbibeln.se,newsner.com,sportbibeln.se#?#.ssp_divider:-abp-has(.sponsored-bar)
 eventeffect.se,executiveeffect.se,saleseffect.se#?#.post-teaser:-abp-has(a[href$="/annons/"])
 expressen.se#?#.teaser:-abp-has(a[href*="/annons"])
@@ -2238,7 +2214,6 @@ familjeliv.se##li.flm-kampanj
 familjeliv.se#?#li:-abp-has(a[href*="/kampanj/"])
 fastighetssverige.se#?#.featuredArticle:-abp-has(.badge-partner-text)
 filmtipset.se#?#.row.news:-abp-has(em:-abp-contains(/sponsrad/i))
-finansliv.se,lararnastidning.se,lektion.se,scanaktier.se,sulkysport.se,tidningenridsport.se#$#abort-on-property-read OA_show
 firstclassmagazine.se#?#a:-abp-has(.feat-cat:-abp-contains(/annons/i))
 flashscore.se#?##box-over-content-a:-abp-has(a[href^="/promobox"][target=_blank])
 fokis.se#?#[id^=post-]:-abp-has(strong:-abp-contains(/i samarbete med/i))
@@ -2248,7 +2223,6 @@ fotbollskanalen.se#?#*:-abp-has(> .notice__tag_sponsored)
 fotbolltransfers.com#?#.smallNewsLink:-abp-has(.smallNewsCategory:-abp-contains(/sponsrad/i))
 fragbite.se#?#article:-abp-has(.category:-abp-contains(/spons/i))
 frureinhold.se#?#[id^=post-]:-abp-has(h5:-abp-contains(/i samarbete med/i))
-fuska.se#$#abort-current-inline-script $ .modal
 fuska.se#?#.space-top:-abp-contains(Reklam)
 fuska.se#?#.well_green:-abp-contains(låna)
 futsalmagasinet.se#?#.td_block_wrap:-abp-has(span:-abp-contains(/annonserat innehåll/i))
@@ -2257,10 +2231,6 @@ gamereactor.se#?#*:-abp-has(> #grtvbelt_Sponsored)
 gynning.net#?#[id^=post-]:-abp-has(h3:-abp-contains(/i samarbete med/i))
 halsafitness.se,yogaworld.se#?#.post-wrap:-abp-has(a[title=PROMOTION])
 handbollskanalen.se#?#.td-block-title-wrap:-abp-contains(/^i samarbete med/i) + .td_block_inner:-abp-has(a[href*="/annons/"])
-handbollskanalen.se,villalivet.se#$#abort-current-inline-script advads_has_ads
-handbollskanalen.se,villalivet.se#$#abort-current-inline-script advadsTracking
-hangotidningen.fi,hbl.fi,ostnyland.fi,vastranyland.fi#$#abort-current-inline-script adfBrand
-happypancake.se#$#abort-on-property-read Object.prototype.adUnits
 hemmafixbloggen.se#?#.post-item:-abp-has(.sponsor-summary)
 hemnet.se#?#.article-list-post a:-abp-has(span:-abp-contains(Sponsrad))
 hemnet.se#?#.article-news__link:-abp-has(.news-article--sponsored)
@@ -2268,17 +2238,13 @@ hemnet.se#?#.featured-news__link:-abp-has(.featured-news__ribbon--sponsored)
 hemnet.se#?#.recent-news__item:-abp-has(.recent-news__category:-abp-contains(/sponsrad/i))
 hemnet.se#?#.result-article__link:-abp-has(.article__ribbon--sponsored)
 hemnet.se#?#.start-page-hero__caption:-abp-has(.start-page-hero__caption-category:-abp-contains(/sponsrad av/i))
-himlentv7.se#$#abort-current-inline-script fbq
-hippson.se#$#abort-current-inline-script sayHi shown
 hippson.se#?#.puff:-abp-has(.presentedby)
 hippson.se#?#.toolboxheader:-abp-contains(/aktuella samarbeten/i) ~ a.more
 hypeline.se#?#.homecontent:-abp-has(.sponsrad_ruta)
 ibnytt.se#?#.widget:-abp-has(h3:-abp-contains(Speltips))
-improveme.se#$#abort-current-inline-script n_pbt
 interiorbyvanessa.se#?#.post:-abp-contains(I annonssamarbete med)
 isabellalowengrip.se#?#.post:-abp-has(em:-abp-contains(/^i samarbete med/i))
 isabellalowengrip.se,matplatsen.net#?#article:-abp-has(em:-abp-contains(/i samarbete med/i))
-jaktplay.se,svenskjakt.se#$#abort-current-inline-script desktop_random_ad_id
 jamtlandstidning.se#?#.elementor-widget-sidebar:-abp-has(li[id^=media_image-1])
 jamtlandstidning.se#?#.elementor-widget-wrap:-abp-has(h2:-abp-contains(/^Annonser$/))
 jamtlandstidning.se#?#.elementor-widget-wrap:-abp-has(img[src*=-annons-])
@@ -2291,12 +2257,10 @@ klart.se#?#.content-box-list__item:-abp-has(.ad-text:-abp-contains(/annons/i))
 krickelins.se#?#article[id^=post-]:-abp-has(a[href$="/sponsrade-inlagg/"])
 kwiss.me#?#.square-item:-abp-has(.qz-quiz-sponsored)
 lajvo.se#?#.postCard:-abp-contains(/bonusar|casino|betting/i)
-lchfarkivet.se#$#abort-on-property-write lepopup_resize
 lesscarbs.se#?#.post:-abp-has(p:-abp-contains(/^annonssamarbete/i))
 linnherbertsson.se#?#.content:-abp-has(.sponsored-container)
 listor.se#?#article:-abp-has(a[href*="/annons/"])
 ljudochbild.se#?#*:-abp-has(> a[href*="/?articleadvertorial"])
-magasinetparagraf.se,omnihalsa.com,plazakvinna.com,senses.se#$#abort-current-inline-script _stq
 majanilssonlindelof.com#?#article:-abp-has(.has-text-align-center:-abp-contains(/samarbete med/i))
 maklarvarlden.se#?#*:-abp-has(> * > .td-post-category:-abp-contains(/spons/i))
 maklarvarlden.se#?#*:-abp-has(> * > * > .td-pulldown-size:-abp-contains(/spons/i))
@@ -2309,21 +2273,17 @@ metromode.se#?#.b-related__item:-abp-has(.advert)
 metromode.se#?#.js-blox-article:-abp-has(.advert)
 metromode.se#?#.slick-item:-abp-has(.advert)
 minimalisterna.se#?#.post:-abp-has(p:-abp-contains(/i samarbete med/i))
-missatsamtal.se#$#abort-on-property-write _gaq
 missatsamtal.se#?#.comment:-abp-has(.nosnaj)
 mmanytt.se#?#.img-featured-posts-image:-abp-has(a[href$="/annons/"])
 moviezine.se#?#.others:-abp-contains(/sponsrat/i)
 moviezine.se#?#[class*=inner_]:-abp-has(.badge:-abp-contains(/sponsrat/i))
 mygatemagazine.se#?#.textwidget:-abp-contains(Annons)
-nasdaqomxnordic.com#$#abort-current-inline-script $ shuffle
-netflixguiden.se#$#abort-on-property-read apstag
 newsvoice.se#?#.td-post-author-name > *:-abp-has(> * > * > * > * > a[href$="/author/foretagaren/"])
 newsvoice.se#?#.td-post-author-name > *:-abp-has(> * > * > * > * > a[href$="/author/underhallning/"])
 newsvoice.se#?#.td_module_wrap:-abp-has(a[title*=casino])
 newsvoice.se#?#aside:-abp-has(h4:-abp-contains(/annonser/i))
 newsvoice.se#?#h4:-abp-contains(/annonser/i) ~ a
 nordfront.se#?#.post:-abp-has(span:not(.post-content):-abp-contains(/annons/i))
-nordichardware.se#$#abort-current-inline-script message
 nordichardware.se#?#.td-big-grid-post:-abp-has(a[href*="/sponsrat/"])
 nordichardware.se#?#.td_block_wrap:-abp-has(span:-abp-contains(/sponsrat/i))
 nouw.com#?#.box.slide.active:-abp-has(.badge:-abp-contains(/annons/i))
@@ -2331,15 +2291,10 @@ nouw.com#?#.Container_blogPost:-abp-has(em:-abp-contains(/reklamsamarbete/i))
 nouw.com#?#.magazine-grid-item:-abp-has(.badge:-abp-contains(/annons/i))
 nyadagbladet.se#?#.widget_media_image:-abp-contains(/annons/i)
 nyadagbladet.se#?#article:-abp-has(.sponsrad)
-nyadagbladet.se,senses.se#$#abort-current-inline-script anOptions
-nyheteridag.se#$#abort-current-inline-script sc type
-opulens.se#$#abort-current-inline-script jQuery themifyPopup
 piraja.se#?##featholder:-abp-has(.spons)
 piraja.se#?##hero:-abp-has(.spons)
 piraja.se#?#.intro:-abp-has(.spons)
-polestarclubsweden.se,sjofart.net,svensktgolfforum.se#$#abort-current-inline-script setTimeout test
 privataaffarer.se#?#.data-grid-teaser:-abp-has(.teaser-label:-abp-contains(/^annons/i))
-professionalsecrets.se#$#abort-current-inline-script $ fancybox
 qx.se#?#.col-4:-abp-has(script)
 qx.se#?#*:-abp-has(> .qxa-container)
 rikakvinnor.se##article.category-samarbete
@@ -2351,12 +2306,7 @@ senses.se#?#.isobrick:-abp-has(a[title^="Reklam:"])
 shortcut.se#?#.blockquote:-abp-has(strong:-abp-contains(/^annons/i))
 shortcut.se#?#.employer:-abp-has(.sponsored)
 shortcut.se#?#article:-abp-has(.sponsored)
-skrattsajten.com#$#abort-current-inline-script $ e.preventDefault
 sokmotorkonsult.se#?#.feature:-abp-has(a[href*="/sponsrade-lankar"])
-spela.se#$#abort-current-inline-script $jscomp
-spela.se#$#abort-current-inline-script AdPortal
-spela.se#$#abort-current-inline-script trackEvidonEvent
-sportpanelen.se#$#abort-on-property-write SG_POPUPS_QUEUE
 sportpanelen.se#?#.stream-item-above-post:-abp-has(a[href*="/ads."])
 startaochdriva.se#?#.featured-image-wrap:-abp-has(a[href*="/sponsrat"])
 stowr.se#?#article:-abp-has(.sponsored)
@@ -2365,39 +2315,29 @@ svampguiden.com#?#.panel:-abp-has(.label-sponsor)
 sverigespringer.se#?#.cd-sidebar-item, .cd-news-card:-abp-has(.cd-card-bar:-abp-contains(/annons/i))
 swedroid.se#?#.article:-abp-has(span:-abp-contains(/sponsr/i))
 swedroid.se#?#li.Notice:-abp-has(a[target=_blank])
-swehockey.se#$#abort-current-inline-script jQuery adscript
 tasteline.com#?#li.article:-abp-has(.category:-abp-contains(/samarbete/i))
 teknifik.se#?#.post:-abp-has(.sponsor)
 teknikveckan.se#?#.grid-item:-abp-has(.pill:-abp-contains(/spons/i))
 tennisportalen.se#?#.tdc-row.stretch_row_content:-abp-has(a[href$="/category/sponsrat/"])
 tennisportalen.se#?#[class^=td-block-span]:-abp-has(a[href$="/sponsrad/"])
-themoviefreak.se#$#abort-current-inline-script animate
 tidningen.nu#?#*:-abp-has(> span:-abp-contains(/^Annons$/)) + .textwidget
 tjanstebilen.se#?#.post-item:-abp-has(.sponsored-article)
 totallyorebro.se,totallystockholm.se#?#[class*=tot-content-preview-container]:-abp-has(a[href*=casino])
 tradera.com#?#*:-abp-has(> [id^=adsense-shopping])
-travprat.se#$#abort-on-property-write bizpanda
 trendenser.se#?#.post_feed_post:-abp-has(.sponsor-info)
 tvdags.se#?#.article-list__item:-abp-has(.sponsor)
 underbaraclaras.se#?#article.post:-abp-has(.entry-summary > p:-abp-contains(/annonssamarbete/i))
 underbaraclaras.se#?#article.post:-abp-has(.entry-summary > p:-abp-contains(/innehåller reklam för/i))
 upphandling24.se#?#.widget:-abp-has(.widget-title:-abp-contains(/^annons/i))
-uppsalanyheter.se#$#abort-current-inline-script uri Math.random
 valerieaflalo.com#?#[id^=post-]:-abp-has(p[style="text-align: center"]:-abp-contains(/i samarbete med/i))
 victoriatornegren.se#?#article[id^=post-]:-abp-has(.entry-header:-abp-contains(/(?:samarbete|Samarbete)\s+med/i))
 victoriatornegren.se#?#article[id^=post-]:-abp-has(.entry-header:-abp-contains(Paid post in collaboration))
 viivilla.se#?#.teaserblockdata:-abp-has(.teaser-sponsored-text)
-villalivet.se#$#abort-current-inline-script SGPB_POPUP_PARAMS
-villalivet.se#$#abort-current-inline-script sgpbPublicUrl
 villalivet.se#?#*:-abp-has(> * > * > a:-abp-contains(/sponsra/i))
 vinochbar.se#?#.et_pb_column.et-last-child:-abp-has(span:-abp-contains(/^annons/i))
 vinochbar.se#?#[class*=et_pb_row_inner]:-abp-has(span:-abp-contains(/^annons/i))
 voister.se#?#.voister .brief:-abp-has(.voister .campaign-vignette)
 voodoofilm.org#?#.content-news:-abp-has(span[id*=Sponsored])
-www.dn.se#$#abort-current-inline-script DN initAds
-www.expressen.se#$#abort-current-inline-script Bau preloadAds
-www.svd.se#$#abort-current-inline-script SvD preDefineAd
-www.svd.se#$#abort-on-property-read navigator.sendBeacon
 ||2mdn.net^$media,rewrite=abp-resource:blank-mp3,domain=viafree.se
 ||aftonbladet.se.senaste.
 ||aftonbladet.se/kampanj/casinoguide
@@ -2449,10 +2389,7 @@ swedroid.se##div[id$=_ad_mobile]
 ! (Currently empty.)
 
 ! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/chromium.txt /\/\/\/\/\/\/\/\/\/\
-! Last synced with upstream: 8th of January 2021
-bastad.se,brpsystems.se,fysikstugan.se,gdpr.se,heleneholmsif.se,historiskahem.se,melodifestivalklubben.se,newsvoice.se,nyadagbladet.se,pppress.se,thorengruppen.se,trafikskola.se,utslappsratt.se#$#abort-current-inline-script exactmetrics_frontend
-nyadagbladet.se#$#abort-current-inline-script exactmetrics_scroll_tracking_load
-bandyfeber.com,binero.se,boktugg.se,carup.se,dagensanalys.se,dinbyggare.se,ettgottskratt.se,humorbibeln.se,i-chalmers.se,kvalitetsmagasinet.se,kvartal.se,ladok.se,lchfarkivet.se,miljo-utveckling.se,mobilanyheter.net,newsner.com,rikatillsammans.se,sportbibeln.se,sportpanelen.se,telekomidag.se,trafiksakerhet.se,vdtidningen.se,zeinaskitchen.se#$#abort-current-inline-script monsterinsights_frontend
+! Last synced with upstream: 9th of January 2021
 ||prod-adops-proxy.dnitv.net^$domain=discoveryplus.se
 
 ! /\/\/\/\/\/\/\/\/\/\ Manuella fixor tillagt av Adblock Plus-teamet / Manual fixes added by the Adblock Plus team /\/\/\/\/\/\/\/\/\/\
