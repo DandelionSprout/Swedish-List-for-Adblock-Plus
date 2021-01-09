@@ -204,24 +204,6 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
-           r"##\+js\(aopw, (.*)\)", 
-           r"#$#abort-on-property-write \1", 
-           line
-        )
-
-        line = re.sub(
-           r"##\+js\(aopr, (.*)\)", 
-           r"#$#abort-on-property-read \1", 
-           line
-        )
-
-        line = re.sub(
-           r"##\+js\(acis, (.*)\)", 
-           r"#$#abort-current-inline-script \1", 
-           line
-        )
-
-        line = re.sub(
            r"(#\$#.*),", 
            r"\1", 
            line
@@ -629,6 +611,24 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*antiblock.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*unblock.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*/deblock.*", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -889,6 +889,24 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*nwletter.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*antiblock.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*unblock.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*/deblock.*", 
            r"", 
            line
         )
