@@ -4,4 +4,4 @@ An ABP-specific conversion of *[Frellwit's Swedish Filter](https://github.com/la
 
 Additionally, this conversion removes a lot of entry types that the Adblock Plus developer team is not happy-happy about having in regional lists, such as entries against anti-adblock, cookie notifications, social buttons, newsletters, paywalls, and push notification prompts.
 
-The goal is for this list to be included in ABP no later than the end of October 2020, hopefully even considerably earlier than then.
+The goal is for this list to be included in ABP.
