@@ -677,6 +677,18 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*onetrust.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*info-?sticky.*", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -1003,6 +1015,18 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*christmas.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*onetrust.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*info-?sticky.*", 
            r"", 
            line
         )
