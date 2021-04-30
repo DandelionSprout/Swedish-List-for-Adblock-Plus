@@ -4,7 +4,7 @@ import re
 SOURCES = ['https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/swe-ubo-filters.txt']
 
 UNSUPPORTED_ABP = ['$important', ',important', '$redirect=', ',redirect=',
-    ':style', '##+js', '.*#' , '!#if', '!#endif', '!+ ', '##^', '!#i', '$app', ':not(:-abp-', '$csp=upgrade-insecure-requests', '$badfilter']
+    ':style', '##+js', '.*#' , '!#if', '!#endif', '!+ ', '##^', '!#i', '$app', ':not(:-abp-', '$csp=upgrade-insecure-requests', '$badfilter', 'removeparam', 'queryprune']
 
 OUTPUT = 'xyzzyx.txt'
 OUTPUT_ABP = 'SwedishList-uBO.txt'
@@ -607,7 +607,7 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r"\$media,mp4", 
-           r"$media,rewrite=abp-resource:blank-mp3", 
+           r"$media", 
            line
         )
 
@@ -686,6 +686,12 @@ def prepare_abp(lines) -> str:
         line = re.sub(
            r".*info-?sticky.*", 
            r"", 
+           line
+        )
+
+        line = re.sub(
+           r"\$all,", 
+           r"$", 
            line
         )
 
