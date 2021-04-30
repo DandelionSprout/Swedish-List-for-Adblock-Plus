@@ -1,7 +1,7 @@
 [Adblock Plus 3.6]
 ! Title: 🇸🇪 Swedish List for Adblock Plus
 ! Expires: 6 days (update frequency)
-! Version: 280420211
+! Version: 300420211
 ! Homepage: https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus
 ! 🇸🇪 Beskrivning: Den här listan fjärnar reklamar och sporing på svenskspråkiga websidor. Den er mycket närt tilknyttad «Frellwit's Swedish Filters», men har blivit modifiserad för at fjärna uppföringer som stridar imot reglementet för inkludering i Adblock Plus (så som anti-anti-adblocking, cookie-notifikationer, nyhetsbrev, med mer), och öka kompatibiliteten med ABP sin syntax, eftersom Frellwits lista inte tilbjuder offisiell brukerstöd för ABP-brukare. Planen är at synkronisera med listan honoms omkring en gång i månaden, och at vi i ABP-teamet lägger til båda variga och mildertidiga fixer i mällantiden.
 ! 🇬🇧 Description: This list removes advertising and tracking on Swedish-language websites. It is very closely connected to "Frellwit's Swedish Filters", but has been modified to remove entries that are against the rules for inclusion in Adblock Plus (such as anti-anti-adblocking, cookie notifications, newsletters, etc.), and increase compatibility with ABP's syntax, since Frellwit's list does not offer official user support for ABP users. The plan is to synchronise with his list roughly once a month, and that the ABP team add both permanent and temporary fixes in the meantime.
@@ -26,7 +26,7 @@
 !    along with this program.  If not, see https://www.gnu.org/licenses/.
 
 ! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Filter.txt /\/\/\/\/\/\/\/\/\/\
-! Last synced with upstream: 28th of April 2021
+! Last synced with upstream: 30th of April 2021
 ###ad-fullscreen:not(body):not(html)
 ###ad-mega-container:not(body):not(html)
 ###ad-wallpaper:not(body):not(html)
@@ -642,6 +642,7 @@
 /wp-content/uploads/*unibet$image
 /wp-json/wpstatistics/*$xmlhttprequest
 /wpbm-banners/*$image
+/ws-tracking$domain=voister.se
 /www.wellness.se\/cnp-assets\/[0-9]+./$script,domain=wellness.se
 /www/images/*$domain=elektronikforumet.com
 /xhr-ads.min.js$script
@@ -931,6 +932,7 @@ happypancake.se###__next > div > div.bar:first-child
 happyride.se##.col-sm-4 > .boxtext
 hastnet.se##.add-wrap, .listings-search-ads, .right_panel
 hbwebben.se##.elementor-widget-container > a > img
+helahisingen.se###custom_html-15, .code-block img
 hemmafixbloggen.se,surfa.se###loader-wrapper
 hemnet.se###ad_unit_placeholder
 hemtrevligt.se##.row--native
@@ -1117,6 +1119,7 @@ startaochdriva.se##.banner-right, .banner-left, .wpb_single_image a[target=_blan
 surfa.se##div[class*=-promo], div[class*=prisjakt-]
 svd.se###mega-ad-wrapper, .Container--ad, .theme-Native
 svenskafans.com##.puff__ad-heading
+svenskgolf.se##.partnerCard, .partnerContent
 svenskhistoria.se##.widget_et_ads, .module-etads, #text-13, a[target=_blank][rel="noopener noreferrer"]
 svenskorientering.se###RightDiv
 svensktgolfforum.se##[data-ad-id]
@@ -1170,7 +1173,6 @@ viseniorer.se##.topheaderinfo
 visitskargarden.se##a[onclick*=Banner], .boss-loader-overlay
 vm-fotboll.se##.category-kampanjer
 vm-fotboll.se##a[href*="/go/"][target]
-voister.se##.campaign
 wellness.se##a[href*=campaign][data-test-tag=external-link]
 worldkustom.com##.middleban
 xn--lnforum-exa.se##.LFRBox
@@ -1424,6 +1426,7 @@ xn--lnforum-exa.se##.LFRBox
 ||js.hs-banner.com^
 ||js.rating-widget.com/external
 ||juicer.io/api/page_views$xmlhttprequest
+||jwpcdn.com/player/plugins/inference/
 ||kaloo.ga^$third-party
 ||kayak.xno.se^$script
 ||kingsizemag.se/content/$image
@@ -1583,6 +1586,7 @@ xn--lnforum-exa.se##.LFRBox
 ||screen9.com^$media,domain=viafree.se
 ||script.e-space.se^$third-party
 ||sdk.pulse.schibsted.com^$script
+||se-ads-microservice.aws.aller.com^
 ||seenthis.se^$third-party
 ||service.survio.se^*/registerhit?$image
 ||sexapp.me^
@@ -1701,7 +1705,7 @@ xn--lnforum-exa.se##.LFRBox
 ||znaptag-tags-se.s3.amazonaws.com^$script
 
 ! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/swe-ubo-filters.txt /\/\/\/\/\/\/\/\/\/\
-! Last synced with upstream: 28th of April 2021
+! Last synced with upstream: 30th of April 2021
 .info/dagens-nyheter/
 .info/dn-nyheter/
 .info/expressen-se-nyheter/
@@ -1718,15 +1722,15 @@ xn--lnforum-exa.se##.LFRBox
 .space/?domain=grabbers.info$popup
 /aftonbladet/crypt/?lpkey
 /aftonbladet/crypt/?lpkey$popup
-/casinoguide$all,domain=aftonbladet.se
-/casinokollen$all,domain=aftonbladet.se
+/casinoguide$domain=aftonbladet.se
+/casinokollen$domain=aftonbladet.se
 /expressen/crypt/?lpkey
 /expressen/crypt/?lpkey$popup
 /google-analytics-for-wordpress$script
 /google-analytics-premium$script
 /keremiya1/js/addtoany.js$script
 /plugins/google-analytics-dashboard$script
-/prerolls$media,rewrite=abp-resource:blank-mp3,domain=gamereactor.se
+/prerolls$media,,domain=gamereactor.se
 /streamsense.$script,domain=dn.se
 /sweden/swedish/hjo-tidning.html
 99mac.se#?#.nitem:-abp-has(a[href="/arkiv/kategori/annons"])
@@ -1900,7 +1904,7 @@ wellness.se#?#*:-abp-has(> [id^=adPlacement])
 ||s.arclk.net/tr?
 ||s.arclk.net/tr?$popup
 ||ssl.p.jwpcdn.com^*/freewheel.js$script,domain=eurosport.se
-||ssl.p.jwpcdn.com^*/jwpsrv.js$script,domain=aftonbladet.se|axess.se|cdn.jwplayer.com|embed.futuresportsmedia.com|eurosport.se|fasttrack.webstream.dk|freeride.se|happyride.se|laget.se|moviezine.se|streamio.com|svd.se|wellness.se
+||ssl.p.jwpcdn.com^*/jwpsrv.js$script,domain=aftonbladet.se|allakorsord.se|allas.se|axess.se|baaam.se|cdn.jwplayer.com|dromhemochtradgard.se|elle.se|embed.futuresportsmedia.com|eurosport.se|fasttrack.webstream.dk|femina.se|freeride.se|hant.se|happyride.se|laget.se|mabra.com|moviezine.se|residencemagazine.se|streamio.com|svd.se|svenskdam.se|wellness.se
 ||ssl.p.jwpcdn.com^*/vast.js$script,domain=moviezine.se
 
 ! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/not_mobile.txt /\/\/\/\/\/\/\/\/\/\
