@@ -695,6 +695,24 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r"\$empty,", 
+           r"$", 
+           line
+        )
+
+        line = re.sub(
+           r".*addtoany.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*smoothscroll.*", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
