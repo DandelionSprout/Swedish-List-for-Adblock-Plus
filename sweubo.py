@@ -210,6 +210,12 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
+           r"^[a-z0-9].*:has.*:upward.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
            r"([a-z*])#[?]?#(.*)( |\|)(.*):(upward|nth-ancestor)\(1\)", 
            r"\1#?#\2\3*:-abp-has(> \4)", 
            line
@@ -713,6 +719,18 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*:-abp-contains\([a-z:]{1,} \* .*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*-deblocker.*", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -1051,6 +1069,12 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*info-?sticky.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*-deblocker.*", 
            r"", 
            line
         )
