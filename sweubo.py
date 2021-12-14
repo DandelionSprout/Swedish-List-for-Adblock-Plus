@@ -648,12 +648,6 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
-           r".*email.*", 
-           r"", 
-           line
-        )
-
-        line = re.sub(
            r".*snowfall.*", 
            r"", 
            line
@@ -667,12 +661,6 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*quantcast.*", 
-           r"", 
-           line
-        )
-
-        line = re.sub(
-           r".*mailchimp.*", 
            r"", 
            line
         )
@@ -734,6 +722,18 @@ def prepare_abp(lines) -> str:
         line = re.sub(
            r".*mail.*", 
            r"", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z])##(\.?[a-z].*:-abp-)", 
+           r"\1#?#\2", 
+           line
+        )
+
+        line = re.sub(
+           r"(\$[a-z]{1,})\$", 
+           r"\1,", 
            line
         )
 
@@ -1032,12 +1032,6 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
-           r".*email.*", 
-           r"", 
-           line
-        )
-
-        line = re.sub(
            r".*snowfall.*", 
            r"", 
            line
@@ -1051,12 +1045,6 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*quantcast.*", 
-           r"", 
-           line
-        )
-
-        line = re.sub(
-           r".*mailchimp.*", 
            r"", 
            line
         )
@@ -1088,6 +1076,18 @@ def prepare_abp(lines) -> str:
         line = re.sub(
            r".*mail.*", 
            r"", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z])##(\.?[a-z].*:-abp-)", 
+           r"\1#?#\2", 
+           line
+        )
+
+        line = re.sub(
+           r"(\$[a-z]{1,})\$", 
+           r"\1,", 
            line
         )
 
