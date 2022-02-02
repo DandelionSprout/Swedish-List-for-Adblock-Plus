@@ -743,6 +743,48 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r"^[a-z0-9].*:-abp-has.*,.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*#\?#\*:-abp-has\(> a\[href\^=\"https://kampanj\.\"]\)$", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"^/snow.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*add-?to-?any.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*-copy-.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*tinypass.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*scribe.*", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -1099,6 +1141,42 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*\.cli-.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"^[a-z0-9].*:-abp-has.*,.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"^/snow.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*add-?to-?any.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*-copy-.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*tinypass.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*scribe.*", 
            r"", 
            line
         )
