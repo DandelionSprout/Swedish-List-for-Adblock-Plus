@@ -114,12 +114,6 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
-           ",script,", 
-           "$script,", 
-           line
-        )
-
-        line = re.sub(
            r"! Version: (.*)January(.*)v([0-9][0-9]?)", 
            r"! Version: \g<1>01\2\3", 
            line
