@@ -1,7 +1,7 @@
 [Adblock Plus 3.6]
 ! Title: 🇸🇪 Swedish List for Adblock Plus
 ! Expires: 6 days (update frequency)
-! Version: 160220221
+! Version: 170220221
 ! Homepage: https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus
 ! 🇸🇪 Beskrivning: Den här listan fjärnar reklamar och sporing på svenskspråkiga websidor. Den er mycket närt tilknyttad «Frellwit's Swedish Filters», men har blivit modifiserad för at fjärna uppföringer som stridar imot reglementet för inkludering i Adblock Plus (så som anti-anti-adblocking, cookie-notifikationer, nyhetsbrev, med mer), och öka kompatibiliteten med ABP sin syntax, eftersom Frellwits lista inte tilbjuder offisiell brukerstöd för ABP-brukare. Planen är at synkronisera med listan honoms omkring en gång i månaden, och at vi i ABP-teamet lägger til båda variga och mildertidiga fixer i mällantiden.
 ! 🇬🇧 Description: This list removes advertising and tracking on Swedish-language websites. It is very closely connected to "Frellwit's Swedish Filters", but has been modified to remove entries that are against the rules for inclusion in Adblock Plus (such as anti-anti-adblocking, cookie notifications, newsletters, etc.), and increase compatibility with ABP's syntax, since Frellwit's list does not offer official user support for ABP users. The plan is to synchronise with his list roughly once a month, and that the ABP team add both permanent and temporary fixes in the meantime.
@@ -26,7 +26,7 @@
 !    along with this program.  If not, see https://www.gnu.org/licenses/.
 
 ! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Filter.txt /\/\/\/\/\/\/\/\/\/\
-! Last synced with upstream: 16th of February 2022
+! Last synced with upstream: 17th of February 2022
 ###ad-fullscreen:not(body):not(html)
 ###ad-mega-container:not(body):not(html)
 ###ad-wallpaper:not(body):not(html)
@@ -688,6 +688,7 @@
 /trackers/SessionCam-tag$script
 /trackolding$script,domain=skyscanner.se
 /trafikfonden/*
+/TSPD/*$script,domain=affarsliv.com|affarslivgotland.se|corren.se|ekuriren.se|eposten.se|folkbladet.se|gotlandjustnu.se|helagotland.se|kindaposten.se|kkuriren.se|klackspark.com|kuriren.nu|mvt.se|norran.se|norrbottensaffarer.se|nsd.se|nt.se|pt.se|sn.se|strengnastidning.se|unt.se|vimmerbytidning.se|vt.se
 /tv/annons$domain=expressen.se
 /tv/brand-studio$domain=expressen.se
 /tv/sponsrat$domain=expressen.se
@@ -853,7 +854,7 @@ bandybyn.se##.StartPageBoxRow > .boxcontainer:nth-child(2) > .StartPageBoxNarrow
 bandyfeber.com##.widget_sp_image, a[title^=ANNONS], .inner_sidebar .widget_text, .entry-content a[href*=utm_campaign]
 banners$image,domain=gavletravet.se|travsport.se
 barnsemester.se##.puffLine, .d-flex > div[style*=min-height]
-barometern.se,blt.se,borasdly.se,bt.se,kalmarposten.se,kristianstadsbladet.se,olandsbladet.se,osterlenmagasinet.se,ostrasmaland.se,smp.se,sydostran.se,trelleborgsallehanda.se,ut.se,vxonews.se,ystadsallehanda.se##.component__guide-ads, #fullpage-ad-portal, div[style="min-height: 302px;"]
+barometern.se,blt.se,borasdly.se,bt.se,kalmarposten.se,kristianstadsbladet.se,nsk.se,olandsbladet.se,osterlenmagasinet.se,ostrasmaland.se,smp.se,sydostran.se,trelleborgsallehanda.se,ut.se,vxonews.se,ystadsallehanda.se##.component__guide-ads, #fullpage-ad-portal, div[style="min-height: 302px;"]
 battrestadsdel.se###top-banner-mobile, #HideBanner, .apd-text, .apds_main, .entry-priomaker, [class^=dls-]
 battrestadsdel.se,casinoexpo.se,flashback.se,leta.se###top-banner
 bergsmannen.se##.ann-puff, .headerLinks
@@ -1018,7 +1019,7 @@ goteborgdirekt.se,mitti.se,vasterastidning.se##.profile-native
 goteborgsgolfaren.se##.sgpb-popup-overlay, #sgpb-popup-dialog-main-div-wrapper
 grillbaronen.se##a[href*="/click."]
 grillbloggen.nu##.rstbox
-guideAds$xmlhttprequest,domain=barometern.se|blt.se|borasdly.se|bt.se|kalmarposten.se|kristianstadsbladet.se|olandsbladet.se|osterlenmagasinet.se|ostrasmaland.se|smp.se|sydostran.se|trelleborgsallehanda.se|ut.se|vxonews.se|ystadsallehanda.se
+guideAds$xmlhttprequest,domain=barometern.se|blt.se|borasdly.se|bt.se|kalmarposten.se|kristianstadsbladet.se|nsk.se|olandsbladet.se|osterlenmagasinet.se|ostrasmaland.se|smp.se|sydostran.se|trelleborgsallehanda.se|ut.se|vxonews.se|ystadsallehanda.se
 hamnen.se##[class*=annons], .tag-sponsrad, .pp-modal-wrap
 hamsterpaj.net###sidebar_wrapper > .zone:last-child
 handbollskanalen.se##.hb-adlabel, [id^=hb-]
@@ -1152,7 +1153,6 @@ ng.se##.view-partner-articles, [class*=sponsored-article], .tertiary-bottom
 nordfront.se###campaign_area
 norrahalland.se##.norra-leeads-ads,.egna_annonser_widget
 norrbotten.com##a[href*=".com/annons"], .td-ss-main-sidebar > .td-a-rec
-nsk.se,skd.se##[data-teaser-section*=native], .slideUp
 nvp.se##[class*=banner_], .BottomBannerContainer
 nyadagbladet.se##.third-col, article[class*=sponsrad]
 nyheter24.se##.lazyload_bar.show, .lazyload_outer.show, .sponsrat, .is_native
@@ -1339,7 +1339,6 @@ ysektionen.se##.yweb-news-paper-banner
 ||applicationinsights.azure.com/*track
 ||apprl.com/embed/$subdocument
 ||appsmav.com^$third-party
-||apsis.one^$third-party
 ||arctic.nyheter24.se^*/heatmap.js
 ||ascontentcloud.com^$third-party
 ||assets.pinterest.com/js/pinit$third-party
@@ -1449,6 +1448,7 @@ ysektionen.se##.yweb-news-paper-banner
 ||dayviews.com/p/tourn/
 ||dayviews.com^$third-party,domain=filmtipset.se|hamsterpaj.net
 ||deals.innocode.no^$third-party
+||delivery.youplay.se/api/player_metrics?
 ||delivery.youplay.se/report?$image
 ||destination.se/track.js
 ||destination.se^$third-party
@@ -1804,7 +1804,6 @@ ysektionen.se##.yweb-news-paper-banner
 ||top100ruokablogit.com^$third-party
 ||tourn.co^$third-party
 ||tourn.se^$third-party
-||tr.apsisforms.com^$third-party
 ||track.cpa.tpgrn.com^
 ||track.intersport.se^$xmlhttprequest
 ||track.postkodlotteriet.se^
