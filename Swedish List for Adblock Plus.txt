@@ -1342,7 +1342,6 @@ ysektionen.se##.yweb-news-paper-banner
 ||applicationinsights.azure.com/*track
 ||apprl.com/embed/$subdocument
 ||appsmav.com^$third-party
-||apsis.one^$third-party
 ||arctic.nyheter24.se^*/heatmap.js
 ||ascontentcloud.com^$third-party
 ||assets.pinterest.com/js/pinit$third-party
@@ -1805,7 +1804,6 @@ ysektionen.se##.yweb-news-paper-banner
 ||top100ruokablogit.com^$third-party
 ||tourn.co^$third-party
 ||tourn.se^$third-party
-||tr.apsisforms.com^$third-party
 ||track.cpa.tpgrn.com^
 ||track.intersport.se^$xmlhttprequest
 ||track.postkodlotteriet.se^
