@@ -779,6 +779,12 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*apsis.*", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -1171,6 +1177,12 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*scribe.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*apsis.*", 
            r"", 
            line
         )
