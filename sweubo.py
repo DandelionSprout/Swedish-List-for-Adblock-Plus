@@ -797,6 +797,24 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r"\$([a-z]{1,15})\$", 
+           r"$\1,", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z])###(.*:-abp-)", 
+           r"\1#?##\2", 
+           line
+        )
+
+        line = re.sub(
+           r"^/[a-z]{1,8}\$[a-ce-z]{1,}$", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -1207,6 +1225,24 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*sleeknote.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"\$([a-z]{1,15})\$", 
+           r"$\1,", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z])###(.*:-abp-)", 
+           r"\1#?##\2", 
+           line
+        )
+
+        line = re.sub(
+           r"^/[a-z]{1,8}\$[a-ce-z]{1,}$", 
            r"", 
            line
         )
