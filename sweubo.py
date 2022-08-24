@@ -582,7 +582,7 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
-           r".*:upward\([a-z.].*", 
+           r".*:upward\([a-z.#[].*", 
            r"", 
            line
         )
