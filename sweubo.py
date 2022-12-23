@@ -827,6 +827,12 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*disclaimer.*", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -1267,6 +1273,12 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r"^\|\|.*fonts.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*disclaimer.*", 
            r"", 
            line
         )
