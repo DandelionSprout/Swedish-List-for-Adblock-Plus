@@ -833,6 +833,24 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*reco\.se\^.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*-attr\(.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*-class\(.*", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -1279,6 +1297,12 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*disclaimer.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*reco\.se\^.*", 
            r"", 
            line
         )
