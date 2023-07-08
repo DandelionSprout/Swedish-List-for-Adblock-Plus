@@ -414,25 +414,25 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
-           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
+           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
            r"\1", 
            line
         )
 
         line = re.sub(
-           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
+           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
            r"\1", 
            line
         )
 
         line = re.sub(
-           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
+           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
            r"\1", 
            line
         )
 
         line = re.sub(
-           r", [#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}$", 
+           r", [#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}$", 
            r"", 
            line
         )
@@ -869,6 +869,12 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*\.cc-.*", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -960,25 +966,25 @@ def prepare_abp(lines) -> str:
         )
 
         line = re.sub(
-           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
+           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
            r"\1", 
            line
         )
 
         line = re.sub(
-           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
+           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
            r"\1", 
            line
         )
 
         line = re.sub(
-           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
+           r"([a-z]#\??#|, )[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}, ", 
            r"\1", 
            line
         )
 
         line = re.sub(
-           r", [#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}$", 
+           r", [#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}$", 
            r"", 
            line
         )
@@ -1345,6 +1351,12 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*reco\.se\^.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*\.cc-.*", 
            r"", 
            line
         )
