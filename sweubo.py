@@ -875,6 +875,18 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*message[_-]?contain.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*all-in-one-seo.*", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -1357,6 +1369,180 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*\.cc-.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*message[_-]?contain.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*all-in-one-seo.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"([$,])1p", 
+           r"\1~third-party", 
+           line
+        )
+
+        line = re.sub(
+           r".*:remove-attr.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z])##(.*:has(-text)?\()", 
+           r"\1#?#\2", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*)( |\|)(.*):(upward|nth-ancestor)\(1\)", 
+           r"\1#?#\2\3*:has(> \4)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*)( |\|)(.*):(upward|nth-ancestor)\(2\)", 
+           r"\1#?#\2\3*:has(> * > \4)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*)( |\|)(.*):(upward|nth-ancestor)\(3\)", 
+           r"\1#?#\2\3*:has(> * > * > \4)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*)( |\|)(.*):(upward|nth-ancestor)\(4\)", 
+           r"\1#?#\2\3*:has(> * > * >  * > \4)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*)( |\|)(.*):(upward|nth-ancestor)\(5\)", 
+           r"\1#?#\2\3*:has(> * > * > * > * > \4)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*)( |\|)(.*):(upward|nth-ancestor)\(6\)", 
+           r"\1#?#\2\3*:has(> * > * > * > * > * > \4)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*)( |\|)(.*):(upward|nth-ancestor)\(7\)", 
+           r"\1#?#\2\3*:has(> * > * > * > * > * > * > \4)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*)( |\|)(.*):(upward|nth-ancestor)\(8\)", 
+           r"\1#?#\2\3*:has(> * > * > * > * > * > * > * > \4)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*)( |\|)(.*):(upward|nth-ancestor)\(9\)", 
+           r"\1#?#\2\3*:has(> * > * > * > * > * > * > * > * > \4)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*)( |\|)(.*):(upward|nth-ancestor)\(10\)", 
+           r"\1#?#\2\3*:has(> * > * > * > * > * > * > * > * > * > \4)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*):(upward|nth-ancestor)\(1\)", 
+           r"\1#?#*:has(> \2)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*):(upward|nth-ancestor)\(2\)", 
+           r"\1#?#*:has(> * > \2)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*):(upward|nth-ancestor)\(3\)", 
+           r"\1#?#*:has(> * > * > \2)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*):(upward|nth-ancestor)\(4\)", 
+           r"\1#?#*:has(> * > * >  * > \2)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*):(upward|nth-ancestor)\(5\)", 
+           r"\1#?#*:has(> * > * > * > * > \2)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*):(upward|nth-ancestor)\(6\)", 
+           r"\1#?#*:has(> * > * > * > * > * > \2)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*):(upward|nth-ancestor)\(7\)", 
+           r"\1#?#*:has(> * > * > * > * > * > * > \2)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*):(upward|nth-ancestor)\(8\)", 
+           r"\1#?#*:has(> * > * > * > * > * > * > * > \2)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*):(upward|nth-ancestor)\(9\)", 
+           r"\1#?#*:has(> * > * > * > * > * > * > * > * > \2)", 
+           line
+        )
+
+        line = re.sub(
+           r"([a-z*])#[?]?#(.*):(upward|nth-ancestor)\(10\)", 
+           r"\1#?#*:has(> * > * > * > * > * > * > * > * > * > \2)", 
+           line
+        )
+
+        line = re.sub(
+           r".*:upward\([a-zA-Z0-9.#].*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r":remove\(\)?", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*[,$]removeparam.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*#\^.*", 
            r"", 
            line
         )
