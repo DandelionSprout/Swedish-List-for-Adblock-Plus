@@ -1,7 +1,7 @@
 [Adblock Plus 3.13]
 ! Title: 🇸🇪 Swedish List for Adblock Plus
 ! Expires: 6 days (update frequency)
-! Version: 30August2023v1
+! Version: 13December2023v1
 ! Homepage: https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus
 ! 🇸🇪 Beskrivning: Den här listan fjärnar reklamar och sporing på svenskspråkiga websidor. Den är mycket närt knuten till «Frellwit's Swedish Filters», men har blivit modifiserad för att fjärna uppföringer som stridar emot reglementet för inkludering i Adblock Plus (så som anti-anti-adblocking, cookie-notifikationer, nyhetsbrev, med mer), och öka kompatibiliteten med ABP sin syntax, eftersom Frellwits lista inte tilbjuder offisiell brukerstöd för ABP-brukare. Planen är att synkronisera med listan honoms omkring en gång i månaden, och att vi i ABP-teamet lägger till båda variga och mildertidiga fixer i mällantiden.
 ! 🇬🇧 Description: This list removes advertising and tracking on Swedish-language websites. It is very closely connected to "Frellwit's Swedish Filters", but has been modified to remove entries that are against the rules for inclusion in Adblock Plus (such as anti-anti-adblocking, cookie notifications, newsletters, etc.), and increase compatibility with ABP's syntax, since Frellwit's list does not offer official user support for ABP users. The plan is to synchronise with his list roughly once a month, and that the ABP team add both permanent and temporary fixes in the meantime.
@@ -26,7 +26,6 @@
 !    along with this program.  If not, see https://www.gnu.org/licenses/.
 
 ! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Filter.txt /\/\/\/\/\/\/\/\/\/\
-! Last synced with upstream: 30th of August 2023
 ###ad-fullscreen:not(body):not(html)
 ###ad-mega-container:not(body):not(html)
 ###ad-wallpaper:not(body):not(html)
@@ -2180,142 +2179,6 @@ zeromagazine.nu##div[id^=ads]
 ||znaptag-tags-se.s3.amazonaws.com^$script
 ||zummy.io^$third-party
 ||zummycloud.com^$third-party
-
-! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/swe-ubo-filters.txt /\/\/\/\/\/\/\/\/\/\
-! Last synced with upstream: 30th of August 2023
-/aftonbladet/crypt/?lpkey
-/aftonbladet/crypt/?lpkey$popup
-/casinokollen$domain=aftonbladet.se
-/expressen/crypt/?lpkey
-/expressen/crypt/?lpkey$popup
-/google-analytics-for-wordpress$script,xmlhttprequest
-/google-analytics-premium$script
-/plugins/google-analytics-dashboard$script
-99.teknikveckan.se#?#.carousel-item-link:-abp-contains(Annons:)
-aftonbladet.se#?##main > div > div > div:-abp-has(h2:-abp-contains(/^annons/i))
-aftonbladet.se#?#*:-abp-has(> [data-ad-subtype]):-abp-properties(min-height:/[0-9]+/)
-aftonbladet.se#?#a:-abp-contains(Kommersiell text, innehåller annonslänkar)
-aftonbladet.se#?#*:-abp-has(> a[href^="https://kampanj."]):not(section):not(div[class^=article-wrapper])
-aftonbladet.se#?#article[class^=article-wrapper] ~ div:-abp-contains(ANNONS)
-aftonbladet.se#?#aside > div:-abp-has(h2:-abp-contains(/^annons/i))
-aftonbladet.se#?#div[class^=css-]:-abp-has([data-ad-subtype=mega])
-aftonbladet.se#?#main > section > div:first-child:-abp-properties(box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 24px 0px)
-aftonbladet.se#?#main > section > div[class^=css-]:first-child:-abp-has(img[src*=closeButton])
-aftonbladet.se#?#section > div:-abp-has(h2:-abp-contains(/^annons/i))
-aktieskolan.se#?#section.elementor-section:-abp-contains(Huvudsponsorer & partners)
-aktivtraning.se#?#.article-item:-abp-contains(Annons)
-aktivtraning.se,digitalfotoforalla.se,iform.se,pctidningen.se,popularhistoria.se#?#li:-abp-has(.content-label:-abp-contains(/annons/i))
-aktuellhallbarhet.se,byggindustrin.se,dagensmedia.se,dagensmedicin.se,dagenssamhalle.se,dagligvarunytt.se,fastighetsnytt.se,market.se,privataaffarer.se,resume.se#?#article:-abp-properties(after, content:/Annonssamarbete/i)
-aktuellhallbarhet.se,byggindustrin.se,dagensmedia.se,dagensmedicin.se,dagenssamhalle.se,dagligvarunytt.se,fastighetsnytt.se,market.se,privataaffarer.se,resume.se#?#div[class^=css-]:-abp-properties(min-height: /420px|400px|320px|312px/)
-aktuellsakerhet.se#?#*:-abp-has(> .td-adspot-title-span)
-allas.se,baaam.se,elle.se,femina.se,frida.se,hant.se,mabra.com,motherhood.se,residencemagazine.se,svenskdam.se#?#div.wings-gray-200:-abp-contains(Annons)
-allas.se,baaam.se,elle.se,femina.se,frida.se,hant.se,mabra.com,motherhood.se,residencemagazine.se,svenskdam.se#?#p:-abp-contains(ANNONS:)
-alltforforaldrar.se#?#.unslider-wrap.unslider-carousel>li:-abp-has(.preamble-category:-abp-contains(/^annons/i))
-barometern.se,blt.se,bt.se,kalmarposten.se,klt.nu,kristianstadsbladet.se,meraosterlen.se,nsk.se,olandsbladet.se,smp.se,sydostran.se,trelleborgsallehanda.se,ut.se,vaxjobladet.se,vxonews.se,ystadsallehanda.se#?##root > div:first-child:-abp-properties(position: fixed)
-byggipedia.se#?#aside .textwidget:-abp-contains(/sponsr|samarbetspartners/i)
-cafe.se,kingmagazine.se,manolo.se#?#*:-abp-has(> .card-partner)
-campingsverige.se#?#*:-abp-has(> .post_sponsrad_label)
-datormagazin.se#?#a:-abp-contains(/^annons/i)
-devote.se#?#*:-abp-has(> div[data-losjs^=borka])
-digitalavykort.se#?#.rightdiv p:-abp-contains(/casino|kasino|lån|betting|odds|lotto/i)
-discoveringtheplanet.com#?#.widget-title:-abp-contains(/annons/i) + .textwidget
-ehandel.se#?#.code-block:-abp-contains(/annons/i)
-elle.se#?#*:-abp-has(> * > section.c-native_banner)
-etc.se#?#*:-abp-has(> .adaptive)
-evergreengarden.se#?#article.elementor-grid-item:-abp-contains(reklamsamarbete)
-familjeliv.se#?#article:-abp-contains(/annons:/i)
-feber.se,tjock.se#?#f-internallinks-new:-abp-contains(Annons)
-filmtipset.se#?#.news:-abp-contains(casino)
-finanstid.se#?#.tdm-descr:-abp-contains(/casino/i)
-fiskejournalen.se#?#*:-abp-has(> .fisher-pinned-post-title.sponsored)
-folkhalsasverige.se#?#.featurette,.vicky-post-whitebox,.vicky-fancybar-inner:-abp-contains(/sponsrad/i)
-fotbolldirekt.se,hockeysverige.se,innebandymagazinet.se#?#.c-announcement:-abp-contains(/annons/i)
-fotbollskane.se,fotbollsthlm.se#?#article:-abp-contains(/är en annons/i)
-fotbollsresultat.com#?#h2:-abp-contains(Spel och dobbel) ~ p
-futsalmagasinet.se#?#.wp-block-column > h2:-abp-contains(/annonser/i) ~ p
-gamereactor.se#?#*:-abp-has(> #grtvbelt_Sponsored)
-godare.se,livsstil.se#?#*:-abp-has(> [id^=adPlacement])
-google.se#?#div.g:-abp-has(a[href*=".com.se/"]):-abp-contains(/återförsäljare|rea|garanti|lågt pris|nöjd|priser|shop|bra pris|kläder|skor|outlet|frakt|butik|betala/i)
-hejaolika.se#?#p[style^=text-transform]:-abp-contains(/annons/i)
-hejaolika.se#?#p[style^=text-transform]:-abp-contains(/annons/i) + .wp-block-kadence-posts
-hippson.se#?#.toolboxheader:-abp-contains(/aktuella samarbeten/i) ~ a.more
-hockeybladet.nu#?#.vc_row_inner:-abp-contains(casino)
-horisontmagasin.se#?#small:-abp-contains(/annons/i)
-indien.nu#?#.nyhetsochreseartiklar .views-row:-abp-contains(/casino/i)
-influens.se#?#.code-block-label:-abp-contains(Annons:)
-inredningsarkitektur.se#?#.article:-abp-contains(/sponsrad artikel/i)
-jarnvagar.nu#?#.et_pb_module:-abp-properties(before, content: "Annons:")
-kiacarclub.se#?#.sidebar-block:-abp-contains(/annons|sponsor/i)
-komponentkoll.se#?#.content > .wrap:-abp-contains(/affiliate-samarbete/i)
-lajvo.se#?#.postCard:-abp-contains(/bonusar|casino|betting|spelbranschen/i)
-listor.se#?#article.feed-item:-abp-contains(/låna pengar|casino|betting/i)
-maltermagasin.se#?#.widget_media_image:-abp-contains(/annons/i)
-mestmotor.se#?#.text-center, div[style^=text-align]:-abp-contains(ANNONS)
-mitti.se###cruncho_now_iframe
-moviezine.se#?#.inner_article:-abp-contains(/sponsrat|annons/i)
-moviezine.se#?#strong:-abp-contains(ANNONS:)
-mygatemagazine.se#?#.textwidget:-abp-contains(Annons)
-newsvoice.se#?#.td-post-author-name > *:-abp-has(> * > * > * > * > a[href$="/author/foretagaren/"])
-newsvoice.se#?#.td-post-author-name > *:-abp-has(> * > * > * > * > a[href$="/author/underhallning/"])
-newsvoice.se#?#h3:-abp-contains(/annons/i) + .textwidget
-newsvoice.se#?#h4:-abp-contains(/annonser/i) ~ a
-ng.se#?#*:-abp-has(> #nativendo-mainfeed)
-nyadagbladet.se#?#.widget_media_image:-abp-contains(/annons/i)
-nyfiknainvesterare.se#?#article.post:-abp-contains(/annons från/i)
-nyheteridag.se#?#article:-abp-contains(/sponsrat innehåll/i)
-passagen.se#?#.text_sidebar_section:-abp-contains(casino)
-podtail.se#?#.item-list__item:-abp-contains(/annons från/i)
-radio.se#?##RAD_D_station_top, #RAD_D_home_top, #RAD_D_home_inhouse, *:-abp-has(> * > * > #RAD_D_search_top)
-resume.se#?#aside > div:-abp-has(a[href="/affarer/alska-arbetsgivarlivet/"])
-samnytt.se#?#div.css-0:-abp-contains(Annons)
-samnytt.se#?#div:-abp-properties(background-color: rgba(0, 0, 0, 0.5))
-senses.se#?#aside:-abp-contains(Annonser:)
-siljannews.se#?#*:-abp-has(> * > a[target=_blank])
-siljannews.se#?#h3:-abp-contains(/^Annons$/) + div
-studocu.com#?#div[role=presentation] + div:-abp-contains(/förhandsvisning/i)
-tabyallehanda.se#?#p:-abp-contains(ANNONS)
-temperatur.nu#?#*:-abp-has(> .holidAds)
-travronden.se#?#div:-abp-properties(visibility: hidden):-abp-contains(ANNONS)
-tv.nu#?##tv-schedule section:-abp-contains(ANNONS)
-tv4play.se#?#button:-abp-contains(Besök annonsör)
-upptack-sverige.se#?#.front-cta:-abp-contains(/sponsrat innehåll/i)
-utsidan.se#?#div.clamzone:-abp-properties(before, content: /Annons:/i)
-viseniorer.se#?#.leftinfo:-abp-contains(/Externa artiklar:|Länktips:/)
-vmj.se#?#.sidebox:-abp-contains(/Externa länkar|Artiklar/)
-||aftonbladet.se.*.
-||best-prizes-now.
-||best-prizes-now.$popup
-||biowebb-data.*.amazonaws$third-party
-||google-analytics.com^$domain=aftonbladet.se|tradera.com|xxl.se
-||googletagmanager.com^$domain=tradera.com|xxl.se
-||kyrkanstidning.se/firstvisit$xmlhttprequest
-||long.interestmoments.com/go/away
-||long.interestmoments.com/go/away$popup
-||look.utndln.com^
-||look.utndln.com^$popup
-||lwadm.com^$domain=sydostran.se
-||maxetise.net^$redirect-rule=noop.js,script,domain=feber.se|tjock.se
-||online.swedbank.se.swedd.
-||s.arclk.net/tr?
-||s.arclk.net/tr?$popup
-||youbora.com^*/sp.min.js$domain=aftonbladet.se|godare.se|livsstil.se|svd.se
-
-! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/not_mobile.txt /\/\/\/\/\/\/\/\/\/\
-! Last synced with upstream: 12th of January 2023
-/tapatalkdetect.$~third-party,script
-
-! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/mobile.txt /\/\/\/\/\/\/\/\/\/\
-! Last synced with upstream: 20th of March 2021
-! (Currently empty.)
-
-! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/not_chromium.txt /\/\/\/\/\/\/\/\/\/\
-! Last synced with upstream: 12th of January 2023
-@@||fast.fonts.net/*/1.css$domain=pbswisstools.com
-@@||p.typekit.net/p.css$domain=bildobubbla.se|bionluk.com|serieframjandet.se
-
-! /\/\/\/\/\/\/\/\/\/\ Baserad på / Based on https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Swedish/chromium.txt /\/\/\/\/\/\/\/\/\/\
-! Last synced with upstream: 12th of January 2023
-! (Currently empty.)
 
 ! /\/\/\/\/\/\/\/\/\/\ Manuella fixor tillagt av Adblock Plus-teamet / Manual fixes added by the Adblock Plus team /\/\/\/\/\/\/\/\/\/\
 @@||maxetise.net^$domain=feber.se
