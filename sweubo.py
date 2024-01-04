@@ -1547,6 +1547,72 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*matches-css.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"(:has\(>.*,)([a-z.# ]|\[)", 
+           r"\1>\2", 
+           line
+        )
+
+        line = re.sub(
+           r"(:has\(>.*,)([a-z.# ]|\[)", 
+           r"\1>\2", 
+           line
+        )
+
+        line = re.sub(
+           r"(:has\(>.*,)([a-z.# ]|\[)", 
+           r"\1>\2", 
+           line
+        )
+
+        line = re.sub(
+           r"(:has\(>.*,)([a-z.# ]|\[)", 
+           r"\1>\2", 
+           line
+        )
+
+        line = re.sub(
+           r"(:has\(>.*,)([a-z.# ]|\[)", 
+           r"\1>\2", 
+           line
+        )
+
+        line = re.sub(
+           r"(:has\(>.*,)([a-z.# ]|\[)", 
+           r"\1>\2", 
+           line
+        )
+
+        line = re.sub(
+           r"(:has\(>.*,)([a-z.# ]|\[)", 
+           r"\1>\2", 
+           line
+        )
+
+        line = re.sub(
+           r"(:has\(>.*,)([a-z.# ]|\[)", 
+           r"\1>\2", 
+           line
+        )
+
+        line = re.sub(
+           r"[,$]empty$", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"^/plugins?/[bce-z0-9][b-z0-9-]{1,}[a-su-z0-9]/?\*?$", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
