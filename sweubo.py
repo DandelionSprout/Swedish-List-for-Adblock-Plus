@@ -887,6 +887,12 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r".*\.se/scripts/track$", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -1609,6 +1615,12 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r"^/plugins?/[bce-z0-9][b-z0-9-]{1,}[a-su-z0-9]/?\*?$", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*\.se/scripts/track$", 
            r"", 
            line
         )
