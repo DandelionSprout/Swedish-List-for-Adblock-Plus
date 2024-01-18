@@ -1,7 +1,7 @@
 [Adblock Plus 3.13]
 ! Title: 🇸🇪 Swedish List for Adblock Plus
 ! Expires: 6 days (update frequency)
-! Version: 18January2023v1
+! Version: 18January2023v2
 ! Homepage: https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus
 ! 🇸🇪 Beskrivning: Den här listan fjärnar reklamar och sporing på svenskspråkiga websidor. Den är mycket närt knuten till «Frellwit's Swedish Filters», men har blivit modifiserad för att fjärna uppföringer som stridar emot reglementet för inkludering i Adblock Plus (så som anti-anti-adblocking, cookie-notifikationer, nyhetsbrev, med mer), och öka kompatibiliteten med ABP sin syntax, eftersom Frellwits lista inte tilbjuder offisiell brukerstöd för ABP-brukare. Planen är att synkronisera med listan honoms omkring en gång i månaden, och att vi i ABP-teamet lägger till båda variga och mildertidiga fixer i mällantiden.
 ! 🇬🇧 Description: This list removes advertising and tracking on Swedish-language websites. It is very closely connected to "Frellwit's Swedish Filters", but has been modified to remove entries that are against the rules for inclusion in Adblock Plus (such as anti-anti-adblocking, cookie notifications, newsletters, etc.), and increase compatibility with ABP's syntax, since Frellwit's list does not offer official user support for ABP users. The plan is to synchronise with his list roughly once a month, and that the ABP team add both permanent and temporary fixes in the meantime.
@@ -194,7 +194,6 @@ bildobubbla.se##.annonser
 bilresaieuropa.se###header-image, #block-2
 bilsport.se##.includingFeaturedSliderArticle:has(.native-mark)
 bilwebben.ax##.front #secondary-content-wrapper, .banner-wrapper
-bioenergitidningen.se##article:remove-class(closed)
 birthday.se##.datax
 bjuvsweek.se##.carouselbanner-wrp
 blocket.se##.placement_panorama, .blocket-placement, div[style="height: 240px;"], [class*=offering-info-box], [data-id=placement_panorama]
@@ -232,8 +231,6 @@ bussmagasinet.se###titlebanner
 bussmagasinet.se,byggteknikforlaget.se,dialasen.com,torbjornstips.se,backpacking.se,sporthalsa.se,ravarumarknaden.se,livetsgoda.se,worldkustom.com,opulens.se,radiotreby.se,nyadagbladet.se,fiskemagasinet.se##.textwidget a[target=_blank]
 butikstrender.se##a[target=_blank] picture, div[data-settings*=sticky]
 butikstrender.se#?#body > .elementor > .elementor-section:first-child:has-text(Annons)
-byggahus.se##a.click-track-attachment-preview:remove-class(click-track-attachment-preview)
-byggahus.se##a.click-track:remove-class(click-track)
 byggahus.se##.block-ad, a[href^="/partner/"], .threadMatchedContent
 byggahus.se,expressen.se,filmtopp.se,alekuriren.se,destination.se,spokbloggen.nu,folkhalsasverige.se,foretagsverige.se,forskningsverige.se,motorbibeln.se,hallbarhetsverige.se,tillvaxtsverige.se,grillbibeln.se,kampenmotcancer.se,bolagsfakta.se##.ad-container
 byggfaktadocu.se##.pop_box
@@ -296,7 +293,6 @@ digitalavykort.se#?#.rightdiv p:has-text(/casino|kasino|lån|betting|odds|lotto/
 digitalfotoforalla.se,iform.se,pctidningen.se,varldenshistoria.se#?#li:-abp-has(.content-label:has-text(/annons/i))
 digitalfotoforalla.se,iform.se,pctidningen.se,varldenshistoria.se##.scroll-message, .gallery-banner, .horseshoe, [data-ad-type], .bcm-banner
 digitalfotoforalla.se,iform.se,pctidningen.se,varldenshistoria.se##.teaser:has(.teaser__cat--sponsorlabel)
-discoveringtheplanet.com##body:remove-class(unselectable)
 discoveringtheplanet.com#?#.widget-title:has-text(/annons/i) + .textwidget
 di.se##.di_panorama-wrapper, .site-header__panorama, .di_panorama__isAdLabel, .discount-box, .campaign-ad-box, .di_start__teaser-placeholder, .di_teaser-flak-planbokskoll, .di_teaser-flak-container--native, .native-box, .bandit-box__teaser--native, a[href*="/brandstudio"], .service-box, .brand-studio-box, .native-article
 di.se##.market-start-top + div:not(.market-container__wrapper)
@@ -489,7 +485,6 @@ hockeybladet.nu##.td_mod_wrap a img[data-permalink], a[data-wpel-link=external][
 hockeybladet.nu#?#.vc_row_inner:has-text(casino)
 hockeyettan.se##.club-ad-item, .banner-row
 hockeyguiden.com##.main-loader.loader-bg
-hockeymagasinet.com##body:remove-class(modal-open)
 hockeynews.se##[class*=ad-style], [id^=outsider-], [id^=banner_], .ad-mob-container, #mobile-one, #mobile-two, .desktop-horizontal-ad, #article-content img[src*=banner], #article-content img[src*=prio-hockey]
 horisontmagasin.se#?#small:has-text(/annons/i)
 hotellorestaurang.se,citymark.today,byggfakta.today###bannnerContainer, #pop_overlay, .banner-s, div.featured
@@ -511,7 +506,6 @@ indien.nu#?#.nyhetsochreseartiklar .views-row:has-text(/casino/i)
 industrinyheter.se,dagensnaringsliv.se,infrastrukturnyheter.se,sportochfritidsnyheter.se,inredningsnyheter.se,byggnyheter.se,dagensfastigheter.se,stockholmsbyggnyheter.se,energinyheter.se,vindkraftsnyheter.se,solenerginyheter.se,jarnvagsnyheter.se,transportochlogistik.se,metallerochgruvor.se,papperochmassa.se,miningmetalnews.com##.insider-ads, [id^=mainadvertorial], [id^=dfptag], .block-advertorial, .block-views-blockconventus-info-articles-info-article-block, #dfp-tag-before_artikel, #dfp-tag-mobile_before_artikel, #block-views-block-leader-article
 influens.se#?#.code-block-label:has-text(Annons:)
 influens.se##[class*=ai-viewport], .ai_widget, #cb-sidebar-h, .livewrapped, .livewrapped_mobil
-ingenjorsjobb.se##body:remove-class(advert-take-over-active)
 ingenjorsjobb.se##.advert-take-over
 inkopsradet.se##div[id^=inkop-]
 innebandy.se##[class*=banner-container], .sponsorsswipeblock
@@ -538,7 +532,6 @@ kimura.se##article:has(img[src$="/sponsrad.png"])
 kimura.se##.bg, a[href*="unibet.com"], a[href*="/kampanjer."], a[href*=utm_campaign], .addafterpreview, .addafter1preview, .samarbeten, .kimura-sponsors, .kimura-sponsors + .text-center
 kingsizemag.se##div#video-overlay, div.sidebar_frame, #affiliates, #affiliates + .text, #popup-interstitial-overlay, .cu_banner, #interstitial-overlay, .kingsize-native
 kittad.se##li:has(.kittad-label-sponsored)
-klart.se##body:remove-class(mega-loading)
 klart.se###overlay, a[rel*=sponsored], .-panorama-ad-wrapper
 kobe.se##.post:has(a[href*=casino])
 kokaihop.se##.ads-wrapper-main, .InterstitialModal
@@ -553,7 +546,6 @@ konsumentmagasinet.se##.pricerunner
 kristendate.se##div[id^=adv]
 kritiker.se##div.recad, div.adhor, div.stickyad
 kulturbloggen.com,schack.se##.sidebar .widget_custom_html
-kvalitetsmagasinet.se,miljo-utveckling.se,telekomidag.se,vdtidningen.se##article:remove-class(closed)
 kvalitetsmagasinet.se,miljo-utveckling.se,telekomidag.se,vdtidningen.se##[class*=nativeadwidget], .partnermedia
 kwiss.me##.square-item:has(.qz-quiz-sponsored)
 lajvo.se###panoramaTop
@@ -590,7 +582,6 @@ livsstil.se,godare.se##*:has(> [id^=adPlacement])
 ljudochbild.se##div[class^=col-md][style*=border-radius]:has(a[href*="/advertorial"])
 ljudochbild.se###MoreLink_fade-out-div
 ljungbysporten.se##section.widget_media_image, a[target=_blank]:not([href*="ljungbysporten.se"])
-ljuskultur.se##body.private:remove-class(private)
 ljuskultur.se,bettips.se,spelo.se,skogsaktuellt.se,maskinbladet.se,entreprenadaktuellt.se,ja.se,husbilhusvagn.se,klassiker.nu,mopedgaraget.se,vibilagare.se,caroftheyear.se,automobil.se,endurobloggen.se,riksettan.net,fightermag.se,frillesasbandy.se,dh.se,djungeltrumman.se,skik.se,omni.se,campingsverige.se,eniro.se,svenskjakt.se,realtid.se,restaurangvarlden.se,naringslivetvgl.se,dalarnasaffarer.se,stockholmsaffarer.se,jamtlandsaffarer.se,nyheteridag.se,epochtimes.se##.banner
 lokalguiden.se##.applicant-match-container, .banner-item, .banner-container
 lokalnytt.se##.panoramaImageBox
@@ -615,7 +606,6 @@ maltermagasin.se##.mh-sidebar, .mh-header-columns
 maltermagasin.se#?#.widget_media_image:has-text(/annons/i)
 maringuiden.se##.banner_hoger, .google_ads_mg_frontpage, .footerComercialDiv
 marsta.nu##.outsider, .panel--naringsliv
-matinspo.se##div:remove-class(with-ads)
 matinspo.se##[id^=matin-]
 matkanalen.se###sidebar .widget_text
 matmalin.se##div[id^=matma-]
@@ -845,7 +835,6 @@ thepattayanews.se##a.td_single_image_bg:not([href*="thepattayanews.se"])
 tidningenbalans.se##div[style*="z-index: 999; background-color: rgba(0, 0, 0, 0.5)"], .bg-grey.hideOnPrint, .bg-adYellow
 tidningendacksnack.se##.ann-puff
 tidningenglobal.se,tidningensyre.se,landetsfria.nu,fempers.se##.revive-box
-tidningenridsport.se##body:remove-class(cli-barmodal-open)
 tidningenskriva.se##section.widget_text:has(div[id^=ad-])
 tidningen.djurskyddet.se##.ai-track
 tidningen.nu#?#*:-abp-has(> span:has-text(/^Annons$/)) + .textwidget
@@ -871,7 +860,6 @@ tv24.se##li[id^=infeed]
 tvmatchen.nu##.bet365, .panorama-wrapper, .tvg-manager-box, .tv102945, .tv102987, #event_banner, .go-to-partner, .odds, #text-13
 tvprogram.se##.backdrop, .fcb
 tv.nu##a[href*="adform.net"], .ad-fullscreenWallpaper__container
-tv.nu##body:remove-class(takeover-loading)
 tv.nu#?##tv-schedule section:has-text(ANNONS)
 undertian.com##.gad, div[style^="font-size:11px; margin-left"], div[style^="font-size:11px; margin-left"] + div[style]
 ungdomsfotboll.se##div[id^=ungdo-]
@@ -1964,6 +1952,7 @@ zeromagazine.nu##div[id^=ads]
 ||delivery.youplay.se/api/player_metrics?
 ||delivery.youplay.se/report?$image
 ||destination.se^$third-party
+||didomi.nwtmedia.se^
 ||digitaliseringsinitiativet.se^
 ||digitaloceanspaces.com/ethical.min.js
 ||dinbilgaranti.se^
