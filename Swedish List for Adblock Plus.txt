@@ -1,7 +1,7 @@
 [Adblock Plus 3.13]
 ! Title: 🇸🇪 Swedish List for Adblock Plus
 ! Expires: 6 days (update frequency)
-! Version: 16January2023v3
+! Version: 18January2023v1
 ! Homepage: https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus
 ! 🇸🇪 Beskrivning: Den här listan fjärnar reklamar och sporing på svenskspråkiga websidor. Den är mycket närt knuten till «Frellwit's Swedish Filters», men har blivit modifiserad för att fjärna uppföringer som stridar emot reglementet för inkludering i Adblock Plus (så som anti-anti-adblocking, cookie-notifikationer, nyhetsbrev, med mer), och öka kompatibiliteten med ABP sin syntax, eftersom Frellwits lista inte tilbjuder offisiell brukerstöd för ABP-brukare. Planen är att synkronisera med listan honoms omkring en gång i månaden, och att vi i ABP-teamet lägger till båda variga och mildertidiga fixer i mällantiden.
 ! 🇬🇧 Description: This list removes advertising and tracking on Swedish-language websites. It is very closely connected to "Frellwit's Swedish Filters", but has been modified to remove entries that are against the rules for inclusion in Adblock Plus (such as anti-anti-adblocking, cookie notifications, newsletters, etc.), and increase compatibility with ABP's syntax, since Frellwit's list does not offer official user support for ABP users. The plan is to synchronise with his list roughly once a month, and that the ABP team add both permanent and temporary fixes in the meantime.
@@ -165,10 +165,9 @@ artbannersplus&task=show
 assistanskoll.se###annons
 atl.nu,landlantbruk.se##a[href*="/atl-tv-annons/"], [class^=Ad_]
 atl.nu,landlantbruk.se#@#.ad-unit:not(.text-ad):not(.textads)
-atl.nu,landlantbruk.se,di.se,expressen.se,dn.se###didomi-host
 aurumforum.se#?#*:-abp-has(> * > span:has-text(Annons))
 autolife.se###Banners
-automation.se,verkstadstidningen.se,transportnytt.se,metalcentral.net##.bannergroup
+automation.se,verkstadstidningen.se,transportnytt.se,datormagazin.se##.a-wrap
 autonytt.se###main > .col-links
 autonytt.se##.sidebar_content:has(a[href*=casino])
 autonytt.se,sv.picmix.com,tekniknytt.se##.leaderboard
@@ -279,7 +278,7 @@ dagens.se##.item:has(.prebid)
 danskaspraket.se##.rightcol
 darkside.se##a[href*="?aktion=bannerclick"]
 datormagazin.se#?#a:has-text(/^annons/i)
-datormagazin.se##div[id^=dator-], .a-wrap
+datormagazin.se##div[id^=dator-]
 datormagazin.se##.td-big-grid-post:has(a[href*="/samarbete/"])
 datormagazin.se##.td_module_wrap:has(a[href*="/annons/"])
 dayviews.com##.frontPageBox--links
@@ -320,7 +319,7 @@ ekonominyheter.se##.td-fix-index:has(a[href*=casino])
 ekonominyheter.se,autonytt.se,undervarttak.se,aftonbladet.se,lesscarbs.se,hockeybladet.nu,matinspo.se##a[href*="/track.adtraction."]
 electronic.se##.content aside.column-narrow:last-of-type
 elektronikforumet.com##td > a[target=_blank] img
-elevspel.se##.rik-unit, .rik-desktop, .rik-mobile
+elevspel.se##.rok-unit, .rok-desktop, .rok-mobile
 elle.se##*:has(> * > section.c-native_banner)
 emocore.se###main > #home_start_div ~ .m_t.box:nth-last-child(-n+2)
 emocore.se###sticky-panorama, #mob-wrap
@@ -591,6 +590,7 @@ livsstil.se,godare.se##*:has(> [id^=adPlacement])
 ljudochbild.se##div[class^=col-md][style*=border-radius]:has(a[href*="/advertorial"])
 ljudochbild.se###MoreLink_fade-out-div
 ljungbysporten.se##section.widget_media_image, a[target=_blank]:not([href*="ljungbysporten.se"])
+ljuskultur.se##body.private:remove-class(private)
 ljuskultur.se,bettips.se,spelo.se,skogsaktuellt.se,maskinbladet.se,entreprenadaktuellt.se,ja.se,husbilhusvagn.se,klassiker.nu,mopedgaraget.se,vibilagare.se,caroftheyear.se,automobil.se,endurobloggen.se,riksettan.net,fightermag.se,frillesasbandy.se,dh.se,djungeltrumman.se,skik.se,omni.se,campingsverige.se,eniro.se,svenskjakt.se,realtid.se,restaurangvarlden.se,naringslivetvgl.se,dalarnasaffarer.se,stockholmsaffarer.se,jamtlandsaffarer.se,nyheteridag.se,epochtimes.se##.banner
 lokalguiden.se##.applicant-match-container, .banner-item, .banner-container
 lokalnytt.se##.panoramaImageBox
@@ -627,6 +627,7 @@ merinfo.se##article[data-customer]
 mestmotor.se##.panel-native, a[href*="/artiklar/partner/"]
 mestmotor.se#?#.text-center, div[style^=text-align]:has-text(ANNONS)
 mestmotor.se##.text-center:has(.kris-kross)
+metalcentral.net##.bannergroup
 metalcentral.net##.bannergroupno-padding
 metalcentral.net,egoinas.se###tm-top-a
 metromode.se#?#.b-card, .b-related__item:has(.advert)
@@ -701,8 +702,6 @@ padeldirekt.se#?#*:-abp-has(> h5:has-text(ANNONS:))
 padeldirekt.se##.article-row:has(.h-background--sponsored)
 padeldirekt.se##.c-featured-article:has(a[href*="/sponsrat"])
 padelfeber.se##.pfm-partners, .pff-partners, .c-widget-ad, .c-teaser--native, #toBanner
-passagen.se###menu-item-3434
-passagen.se#?#.text_sidebar_section:has-text(casino)
 pilsner.nu##.et_pb_image a:not([href^="/"]):not([href*="pilsner.nu"]), .mctb-position-bottom
 piraja.se#?#.intro, #hero, #featholder:has(.spons)
 placera.se##.noMarginAd
@@ -847,6 +846,7 @@ tidningenbalans.se##div[style*="z-index: 999; background-color: rgba(0, 0, 0, 0.
 tidningendacksnack.se##.ann-puff
 tidningenglobal.se,tidningensyre.se,landetsfria.nu,fempers.se##.revive-box
 tidningenridsport.se##body:remove-class(cli-barmodal-open)
+tidningenskriva.se##section.widget_text:has(div[id^=ad-])
 tidningen.djurskyddet.se##.ai-track
 tidningen.nu#?#*:-abp-has(> span:has-text(/^Annons$/)) + .textwidget
 tidningen.se##.sidebar .widget_widget_code
@@ -1247,7 +1247,7 @@ zeromagazine.nu##div[id^=ads]
 /ajax/docu_stats.jsp
 /aller-ads
 /amplitude$domain=mytaste.se
-/analytics$domain=gbgfotboll.se|stff.se|svenskfotboll.se|di.se|etc.se|vackertvader.se|skogsforum.se
+/analytics$domain=gbgfotboll.se|stff.se|svenskfotboll.se|di.se|etc.se|vackertvader.se|skogsforum.se|skolporten.se
 /analytics-bmb
 /analytics/cts.min.js
 /analytics/gallup
@@ -1282,7 +1282,6 @@ zeromagazine.nu##div[id^=ads]
 /atomic-blocks$script,domain=foretagsverige.se|forskningsverige.se|motorbibeln.se|hallbarhetsverige.se|tillvaxtsverige.se|grillbibeln.se|kampenmotcancer.se
 /atoms/images/*banner$domain=etc.se
 /at_banners$domain=alandstidningen.ax
-/a/jamstalldhetskarta.se$script,domain=jamstalldhetskarta.se
 /a?callback=pfmod.saveadsettings
 /bannersidor/*
 /banners$domain=magasinetparagraf.se|sporttv.nu|cykla.se|vatternrundan.se|dagenstv.com|sydkusten.es|pellesoft.se|sbktavling.se|dykarna.nu|varmepumpsforum.com|poolforum.se
@@ -1335,7 +1334,6 @@ zeromagazine.nu##div[id^=ads]
 /cts.js$domain=allas.se|elle.se|femina.se|hant.se|mabra.com|residencemagazine.se|svenskdam.se|motherhood.se
 /cts.min.js$domain=recept.se
 /cx-emediate-userprofile-se
-/dagensSE-mergedheader$domain=dagens.se
 /data/banner$domain=nyaboendet.se
 /data/track$domain=nyaboendet.se
 /detroitchicago$domain=temadagar.se|svenskaorduttryck.se
@@ -1554,7 +1552,7 @@ zeromagazine.nu##div[id^=ads]
 /plugins/pixel-caffeine
 /plugins/pixel-cat
 /plugins/popups/*$script,domain=svenskhistoria.se|bugburger.se
-/plugins/popup$domain=ordfrontmagasin.se|snowmobile.se|sverige.nu|it-kanalen.se|forvaltarforum.se|forskning.se|it-finans.se|it-halsa.se|it-kanalen.se|it-pedagogen.se|it-retail.se|magasinetkonkret.se
+/plugins/popup$domain=ordfrontmagasin.se|snowmobile.se|sverige.nu|it-kanalen.se|forvaltarforum.se|forskning.se|it-finans.se|it-halsa.se|it-kanalen.se|it-pedagogen.se|it-retail.se|magasinetkonkret.se|jobsinsweden.se
 /plugins/pum-$script,domain=snowmobile.se|it-finans.se|it-halsa.se|it-kanalen.se|it-pedagogen.se|it-retail.se
 /plugins/quick-adsense
 /plugins/r9-analytics
@@ -1665,7 +1663,6 @@ zeromagazine.nu##div[id^=ads]
 /tabs_hits_counter.php$image
 /takeover-ad.js$domain=ridsport.se
 /takeover.js$domain=gekas.se
-/tarteaucitron$domain=sv.geneanet.org
 /tasteline/templates/popup
 /tbilen/banner/*
 /templates/ad_$domain=jaktojagare.se
@@ -1739,7 +1736,7 @@ zeromagazine.nu##div[id^=ads]
 /wp-content/uploads/*unibet$image
 /wp-content/uploads/*-sidebar$image,domain=dagensinfrastruktur.se|nyaprojekt.se|nordiskaprojekt.se|svenskbyggtidning.se|grontsamhallsbyggande.se
 /wp-content/uploads/*/public/assets/js/advanced.js$script
-/wp-content\/uploads\/[0-9]+/$script,domain=villalivet.se|skanesport.se|dackavisen.se|automation.se|datormagazin.se|tidningenproffs.se|densistavilan.se
+/wp-content\/uploads\/[0-9]+/$script,domain=villalivet.se|skanesport.se|dackavisen.se|automation.se|tidningenproffs.se|densistavilan.se
 /wp-json/wpstatistics
 /wp-json/wp-statistics
 /wp-native-ads.json
@@ -1948,6 +1945,7 @@ zeromagazine.nu##div[id^=ads]
 ||d1gwclp1pmzk26.cloudfront.net/agile/agile-cloud.js
 ||d2m8uxg4w7uelx.cloudfront.net/fpa.js
 ||d2m8uxg4w7uelx.cloudfront.net/fullpageads
+||d2qrdklrsxowl2.cloudfront.net/js/hapyak.js
 ||d9v72urx9pbbc.cloudfront.net/LoadSlotLocator
 ||d9v72urx9pbbc.cloudfront.net/channel
 ||d10lumateci472.cloudfront.net/?amuld$script
@@ -1966,7 +1964,6 @@ zeromagazine.nu##div[id^=ads]
 ||delivery.youplay.se/api/player_metrics?
 ||delivery.youplay.se/report?$image
 ||destination.se^$third-party
-||didomi.nwtmedia.se^
 ||digitaliseringsinitiativet.se^
 ||digitaloceanspaces.com/ethical.min.js
 ||dinbilgaranti.se^
@@ -2067,7 +2064,7 @@ zeromagazine.nu##div[id^=ads]
 ||imgix.net^*/analytics.$script
 ||imp.laget.se^
 ||inboxads.com^$third-party
-||inmobi.com^$domain=alltomelbil.se|rikatillsammans.se|egoinas.se|land.se|moviezine.se|netflixguiden.se|travelnews.se|varldenshaftigaste.se|merinfo.se|foreca.se|matklubben.se|reseguiden.se|newsner.com|humorbibeln.se|sportbibeln.se|ettgottskratt.se|laget.se|byrum.se|sportlovin.se|receptfavoriter.se|forni.se|kimura.se|cornucopia.se|norrahalland.se
+||inmobi.com^$domain=alltomelbil.se|rikatillsammans.se|egoinas.se|land.se|moviezine.se|netflixguiden.se|travelnews.se|varldenshaftigaste.se|merinfo.se|foreca.se|matklubben.se|reseguiden.se|newsner.com|humorbibeln.se|sportbibeln.se|ettgottskratt.se|laget.se|byrum.se|sportlovin.se|receptfavoriter.se|forni.se|kimura.se|cornucopia.se|norrahalland.se|elevspel.se|villalivet.se
 ||insertcoin.se^$third-party
 ||insplanet.com^$third-party
 ||instaforex.com^$third-party
@@ -2299,7 +2296,6 @@ zeromagazine.nu##div[id^=ads]
 ||service.force.com^$domain=allabolag.se
 ||sexapp.me^
 ||se-affiliate-gallery.aws.aller.com^
-||sinful.se/sinalytics
 ||sitegainer.com/jsinsert/*/sitegainer$third-party
 ||skattamindre.se^
 ||skk.se/TSPD/
