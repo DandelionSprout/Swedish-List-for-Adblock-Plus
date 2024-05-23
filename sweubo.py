@@ -917,6 +917,30 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r"^(\||:|/).*ify\..*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"^[|:/a-z0-9].*cdn\..*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*amazonaws.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"^.*(download|install).*app.*$", 
+           r"", 
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\r\n'
 
@@ -1687,6 +1711,30 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*\.kxcdn\.com\^", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"^(\||:|/).*ify\..*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"^[|:/a-z0-9].*cdn\..*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r".*amazonaws.*", 
+           r"", 
+           line
+        )
+
+        line = re.sub(
+           r"^.*(download|install).*app.*$", 
            r"", 
            line
         )
