@@ -1,7 +1,7 @@
 [Adblock Plus 3.13]
 ! Title: 🇸🇪 Swedish List for Adblock Plus
 ! Expires: 6 days (update frequency)
-! Version: 23May2024v1
+! Version: 23May2024v2
 ! Homepage: https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus
 ! 🇸🇪 Beskrivning: Den här listan fjärnar reklamar och sporing på svenskspråkiga websidor. Den är mycket närt knuten till «Frellwit's Swedish Filters», men har blivit modifiserad för att fjärna uppföringer som stridar emot reglementet för inkludering i Adblock Plus (så som anti-anti-adblocking, cookie-notifikationer, nyhetsbrev, med mer), och öka kompatibiliteten med ABP sin syntax, eftersom Frellwits lista inte tilbjuder offisiell brukerstöd för ABP-brukare. Planen är att synkronisera med listan honoms omkring en gång i månaden, och att vi i ABP-teamet lägger till båda variga och mildertidiga fixer i mällantiden.
 ! 🇬🇧 Description: This list removes advertising and tracking on Swedish-language websites. It is very closely connected to "Frellwit's Swedish Filters", but has been modified to remove entries that are against the rules for inclusion in Adblock Plus (such as anti-anti-adblocking, cookie notifications, newsletters, etc.), and increase compatibility with ABP's syntax, since Frellwit's list does not offer official user support for ABP users. The plan is to synchronise with his list roughly once a month, and that the ABP team add both permanent and temporary fixes in the meantime.
@@ -1856,8 +1856,8 @@ zeromagazine.nu##div[id^=ads]
 @@_advert.$domain=e-pages.dk
 @@||cargodisplayads.com/gota/api/v1/adImage$image,domain=barometern.se|blt.se|bt.se|kristianstadsbladet.se|olandsbladet.se|smp.se|sydostran.se|trelleborgsallehanda.se|ut.se|ystadsallehanda.se|kalmarposten.se|vxonews.se|vaxjobladet.se|nsk.se|klt.nu
 @@||cargodisplayads.com/till_minne/
-@@
-@@
+@@||cdn.play.showheroes.com/part/partimage$image
+@@||cdn.play.showheroes.com/part/rendered$media
 @@||createsend1.com/css/
 @@||feed.meltwater.com^$subdocument
 @@||fwmrm.net/ad/g/$xhr,domain=tv4play.se|tv4.se|fotbollskanalen.se|koket.se
