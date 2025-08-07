@@ -205,7 +205,7 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r"^[a-z0-9].*:has.*:upward.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -343,7 +343,7 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r":remove()", 
-           r"", 
+           "", 
            line
         )
 
@@ -355,19 +355,19 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*\$\$script.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"\$~doc$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*\$.*,app=.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -391,12 +391,12 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r"^!$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
-           r"(.*)\$all$", 
+           r"(.*)\$all(,reason.*)?$", 
            r"\1\n\1$popup", 
            line
         )
@@ -433,49 +433,49 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r", [#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*##[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[cC]ooo?k[ic][es]?.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[aA]d-?[bB]lock.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[nN]ewsletter.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*gdpr.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*GDPR.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*#\$#.*advanced_ads.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -493,139 +493,139 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*[sS]hare.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[sS]ocial.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[pP]aywall.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*follow-us.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*stickyFollow.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[nN]otifi.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*facebook.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*push.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*-icon\.\$.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[cC]onsent.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*optin.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[/.|]like.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*nyhetsbrev.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[aA]dd[tT]his.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*privacy.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*(\* > [a-z0-9äöå ]{1,})/i.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*consensu.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^[a-z0-9_]{1,6}$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[$,]queryprune.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*:upward\([a-z.#[].*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*OneSignal.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*nwletter.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"\(\)$", 
-           r"", 
+           "", 
            line
         )
 
@@ -637,67 +637,67 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*antiblock.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*unblock.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*/deblock.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*bilmur.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*login-required.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*snowfall.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*-snow-.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*quantcast.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*christmas.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*onetrust.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*info-?sticky.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -715,31 +715,31 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*addtoany.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*smoothscroll.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*:-abp-contains\([a-z:]{1,} \* .*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*-deblocker.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*mail.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -757,67 +757,67 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*\.cli-.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^[a-z0-9].*:-abp-has.*,.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*#\?#\*:-abp-has\(> a\[href\^=\"https://kampanj\.\"]\)$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^/snow.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*add-?to-?any.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*-copy-.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*tinypass.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*scribe.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*apsis.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*messaging.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*sleeknote.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -835,67 +835,67 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r"^/[a-z]{1,8}\$[a-ce-z]{1,}$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*\.app\^\$third-party$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^\|\|.*fonts.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*disclaimer.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*reco\.se\^.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*-attr\(.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*-class\(.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*\.cc-.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*message[_-]?contain.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*all-in-one-seo.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*\.se/scripts/track$", 
-           r"", 
+           "", 
            line
         )
 
@@ -913,31 +913,37 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*:remove-class\(.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^(\||:|/).*ify\..*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^[|:/a-z0-9].*cdn\..*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*amazonaws.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^.*(download|install).*app.*$", 
-           r"", 
+           "", 
+           line
+        )
+
+        line = re.sub(
+           r"^(\||/|:|-).*(tra?c?k(ing|er)?([.$/_-]|$)|analy|metric).*$", 
+           "", 
            line
         )
 
@@ -1027,7 +1033,7 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r"^!$", 
-           r"", 
+           "", 
            line
         )
 
@@ -1051,49 +1057,49 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r", [#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*##[#.]?([a-z-]{1,})?(didomi|[cC]ooo?k[ic][es]|gdpr|GDPR|advanced_ads|[sS]hare|[sS]ocial|[pP]aywall|follow-us|sticky[fF]ollow|[nN]otifi|[fF]acebook|[pP]ush|[cC]onsent|[oO]ptin|[nN]yhetsbrev|[aA]dd[tT]his|[pP]rivacy|[cC]onsensu|[oO]ne[sS]ignal|nwletter|antiblock|unblock|bilmur|login-?require|snowfall|-snow-|[qQ]uantcast|christmas|[oO]netrust|info-?sticky|add-?to-?any|smooth-?scroll|tinypass|scribe|apsis|messaging|sleeknote|disclaimer|cc-container)([a-zA-Z_.=*^$-]|\[|\]|\"){0,}$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[cC]ooo?k[ic][es]?.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[aA]d-?[bB]lock.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[nN]ews-?letter.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*gdpr.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*GDPR.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*#\$#.*advanced_ads.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -1105,211 +1111,211 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r"^! .*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^\[Adblock .*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[sS]hare.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[sS]ocial.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[pP]aywall.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*follow-us.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*stickyFollow.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[nN]otifi.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*facebook.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*push.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*-icon\.\$.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[cC]onsent.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*optin.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[/.|]like.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*nyhetsbrev.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[aA]dd[tT]his.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*privacy.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*EUModal.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*OneSignal.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*smartbanner.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*consensu.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*nwletter.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*antiblock.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*unblock.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*/deblock.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*bilmur.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*login-required.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*snowfall.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*-snow-.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*quantcast.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*christmas.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*onetrust.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*info-?sticky.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*-deblocker.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*mail.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -1327,61 +1333,61 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*\.cli-.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^[a-z0-9].*:-abp-has.*,.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^/snow.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*add-?to-?any.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*-copy-.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*tinypass.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*scribe.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*apsis.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*messaging.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*sleeknote.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -1399,49 +1405,49 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r"^/[a-z]{1,8}\$[a-ce-z]{1,}$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*\.app\^\$third-party$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^\|\|.*fonts.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*disclaimer.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*reco\.se\^.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*\.cc-.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*message[_-]?contain.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*all-in-one-seo.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -1453,7 +1459,7 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*:remove-attr.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -1585,31 +1591,31 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*:upward\([a-zA-Z0-9.#].*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r":remove\(\)?", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*[,$]removeparam.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*#\^.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*matches-css.*", 
-           r"", 
+           "", 
            line
         )
 
@@ -1663,19 +1669,19 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r"[,$]empty$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^/plugins?/[bce-z0-9][b-z0-9-]{1,}[a-su-z0-9]/?\*?$", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*\.se/scripts/track$", 
-           r"", 
+           "", 
            line
         )
 
@@ -1693,49 +1699,109 @@ def prepare_abp(lines) -> str:
 
         line = re.sub(
            r".*:remove-class\(.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*pji\.nu\^.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*prisjakt-a\..*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*\.kxcdn\.com\^", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^(\||:|/).*ify\..*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^[|:/a-z0-9].*cdn\..*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r".*amazonaws.*", 
-           r"", 
+           "", 
            line
         )
 
         line = re.sub(
            r"^.*(download|install).*app.*$", 
-           r"", 
+           "", 
+           line
+        )
+
+        line = re.sub(
+           r"^.*app-banner.*$", 
+           "", 
+           line
+        )
+
+        line = re.sub(
+           r"^.*mooth.*(croll|wheel).*$", 
+           "", 
+           line
+        )
+
+        line = re.sub(
+           r"^.*nicescroll.*$", 
+           "", 
+           line
+        )
+
+        line = re.sub(
+           r"^.*/[lL]og.*$", 
+           "", 
+           line
+        )
+
+        line = re.sub(
+           r"^\..*track.*$", 
+           "", 
+           line
+        )
+
+        line = re.sub(
+           r"^\|\|addrevenue\.io\^\$third-party$", 
+           "", 
+           line
+        )
+
+        line = re.sub(
+           r"^(\||/|:|-).*(tra?c?k(ing|er)?([.$/_-]|$)|analy|metric).*$", 
+           "", 
+           line
+        )
+
+        line = re.sub(
+           r"^(.*)\$all(,reason=([A-Za-z0-9ÅÄÖåäöÉé🇸🇪🇬🇧.:/?= -]|(🇦|🇧|🇨|🇩|🇪|🇫|🇬|🇭|🇮|🇯|🇰|🇱|🇲|🇳|🇴|🇵|🇶|🇷|🇸|🇹|🇺|🇻|🇼|🇽|🇾|🇿)){1,})?$", 
+           r"\1\n\1$popup", 
+           line
+        )
+
+        line = re.sub(
+           r"^(.*)\$all(,reason=([A-Za-z0-9ÅÄÖåäöÉé🇸🇪🇬🇧.:/?= -]|(🇦|🇧|🇨|🇩|🇪|🇫|🇬|🇭|🇮|🇯|🇰|🇱|🇲|🇳|🇴|🇵|🇶|🇷|🇸|🇹|🇺|🇻|🇼|🇽|🇾|🇿)){1,})?,domain=([a-z0-9.|-]{1,})$", 
+           r"\1$domain=\5\n\1$popup,domain=\5", 
+           line
+        )
+
+        line = re.sub(
+           r"^.*[$,]denyallow.*$", 
+           "", 
            line
         )
 
