@@ -847,6 +847,18 @@ def prepare_abp(lines) -> str:
            line
         )
 
+        line = re.sub(
+           r"^.*[|.]((reddit|vk)\.com)[^a-z].*$",
+           "",
+           line
+        )
+
+        line = re.sub(
+           r"^.*play\.google\.com.*$",
+           "",
+           line
+        )
+
         if is_supported_abp(line) and not line == '':
             text += line + '\n'
 
